@@ -337,6 +337,24 @@ button:hover {
   border: 1px solid #000; /* Agrega un borde a las celdas (opcional) */
 }
 
+.tabla-row {
+  display: flex;
+  flex-direction: column; /* Establece la dirección de la tabla como vertical */
+  border: 1px solid #000; /* Agrega un borde a la tabla (opcional) */
+}
+
+.tabla-row .fila {
+  display: flex;
+  /* Añade espaciado entre filas (espacio entre elementos .fila) */
+  margin-bottom: 10px;
+}
+
+.tabla-row .celda {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #000; /* Agrega un borde a las celdas (opcional) */
+}
+
 footer {
   background-color: #000000;
   width: 100%;
