@@ -91,6 +91,8 @@ nav .logo-container .brand-name spam {
   padding-left: 45px;
   padding-right: 45px;
   padding-top: 70px;
+  padding-bottom: 20px;
+  background-color: #d1ebf0;
 }
 
 .hero-section {
@@ -132,9 +134,9 @@ nav .logo-container .brand-name spam {
   align-items: center; /* Alinea verticalmente los elementos al centro */
 }
 
-.texto {
+.hero-text {
   flex: 1; /* Hace que el texto ocupe todo el espacio restante en el contenedor */
-  padding: 10px; /* Espacio alrededor del texto para mejorar la legibilidad */
+  padding: 0px; /* Espacio alrededor del texto para mejorar la legibilidad */
 }
 
 .img-pc {
@@ -171,6 +173,55 @@ button:hover {
   background-color: transparent;
   color: #000000;
   border: solid 1px gray;
+}
+
+.testing {
+  display: flex;
+  flex-direction: row; /* Establece la dirección del flexbox como horizontal (izquierda a derecha) */
+  align-items: center; /* Alinea verticalmente los elementos al centro */
+}
+
+.texto {
+  flex: 1; /* Hace que el texto ocupe todo el espacio restante en el contenedor */
+  padding: 10px; /* Espacio alrededor del texto para mejorar la legibilidad */
+}
+
+.imagen {
+  flex: 1; /* Hace que la imagen ocupe todo el espacio restante en el contenedor */
+  text-align: right; /* Alinea la imagen a la derecha dentro de su div */
+}
+
+.imagen img {
+  max-width: 100%; /* Asegura que la imagen no se desborde del div */
+  height: auto; /* Mantiene la proporción de aspecto de la imagen */
+}
+
+.yellow-box {
+  background-color: #e45e1b;
+  border-radius: 25px;
+  padding: 20px;
+  width: 90%;
+}
+
+.yellow-tb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  text-align: center;
+}
+
+.yellow-box .fila {
+  padding: 10px;
+  background-color: #ffefe7;
+  margin: 5px;
+  border-radius: 25px;
+  width: 95%;
+}
+
+.fila .title-box {
+  font-weight: bold;
+  background-color: #e86424;
 }
 
 .services {
@@ -298,27 +349,6 @@ button:hover {
   transform: scale(1.1);
 }
 
-.testing {
-  display: flex;
-  flex-direction: row; /* Establece la dirección del flexbox como horizontal (izquierda a derecha) */
-  align-items: center; /* Alinea verticalmente los elementos al centro */
-}
-
-.texto {
-  flex: 1; /* Hace que el texto ocupe todo el espacio restante en el contenedor */
-  padding: 10px; /* Espacio alrededor del texto para mejorar la legibilidad */
-}
-
-.imagen {
-  flex: 1; /* Hace que la imagen ocupe todo el espacio restante en el contenedor */
-  text-align: right; /* Alinea la imagen a la derecha dentro de su div */
-}
-
-.imagen img {
-  max-width: 100%; /* Asegura que la imagen no se desborde del div */
-  height: auto; /* Mantiene la proporción de aspecto de la imagen */
-}
-
 .tabla-test {
   display: flex;
   flex-direction: column; /* Establece la dirección de la tabla como vertical */
@@ -332,24 +362,6 @@ button:hover {
 }
 
 .tabla-test .celda {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #000; /* Agrega un borde a las celdas (opcional) */
-}
-
-.tabla-row {
-  display: flex;
-  flex-direction: column; /* Establece la dirección de la tabla como vertical */
-  border: 1px solid #000; /* Agrega un borde a la tabla (opcional) */
-}
-
-.tabla-row .fila {
-  display: flex;
-  /* Añade espaciado entre filas (espacio entre elementos .fila) */
-  margin-bottom: 10px;
-}
-
-.tabla-row .celda {
   flex: 1;
   padding: 10px;
   border: 1px solid #000; /* Agrega un borde a las celdas (opcional) */
