@@ -18,27 +18,33 @@ nav {
   align-items: center;
   color: #85847f;
   padding: 15px;
+  background-color: #e86424;
 }
+
 nav .logo-container {
   display: flex; /* Activa el modelo de caja flexible */
   align-items: center; /* Centra verticalmente los elementos */
 }
-nav .logo {
+
+nav .logo-container .logo {
   flex: 0 0 auto; /* Evita que el logo crezca */
   margin-right: 10px; /* Espacio entre el logo y el texto */
 }
-nav .logo img {
+
+nav .logo-container .logo img {
   width: 50px;
   height: 50px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
 }
-nav .brand-name {
+
+nav .logo-container .brand-name {
   flex: 1; /* El texto ocupará el espacio restante */
   font-size: 1.5em;
 }
-nav spam {
+
+nav .logo-container .brand-name spam {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,11 +53,12 @@ nav spam {
   padding-right: 30px;
   color: #000000;
 }
-nav .icons {
+
+.icons {
   display: flex;
   gap: 15px;
 }
-nav .icons button {
+.icons button {
   background: none;
   border-style: none;
   width: 15vw;
@@ -61,15 +68,21 @@ nav .icons button {
   color: #ffefe7;
   font-size: 1em;
 }
-nav .icons button:hover {
+.icons button:hover {
   transform: scale(1.1);
 }
-nav .icons .button-white {
+.icons .button-white {
   background-color: #ffefe7;
   color: #000000;
 }
 
-article {
+.login img {
+  width: 25px;
+  height: 25px;
+  background-color: red;
+}
+
+.hero {
   width: auto;
   color: #85847f;
   display: flex;
@@ -79,8 +92,10 @@ article {
   padding-left: 45px;
   padding-right: 45px;
   padding-top: 70px;
+  background-color: #d1ebf0;
 }
-article .hero-section {
+
+.hero-section {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -88,26 +103,32 @@ article .hero-section {
   padding-top: 50px;
   gap: 25px;
 }
-article h1 {
+
+.hero h1 {
   font-size: 3em;
   padding: 0px;
   margin: 0px;
 }
-article h2 {
+
+.hero h2 {
   font-size: 2.5em;
 }
-article .black {
+
+.black {
   color: #000000;
 }
-article .white {
+
+.white {
   color: #ffefe7;
 }
-article p {
+
+.hero p {
   font-size: 1.5em;
   text-align: justify;
   width: 60%;
 }
-article button {
+
+button {
   background: none;
   border-style: none;
   width: 15vw;
@@ -117,49 +138,53 @@ article button {
   color: #ffefe7;
   font-size: 1em;
 }
-article button:hover {
+button:hover {
   transform: scale(1.1);
 }
-article .button-black {
+
+.hero .button-black {
   background-color: #000000;
   color: #ffefe7;
 }
-article .button-transparent {
+
+.hero .button-transparent {
   background-color: transparent;
   color: #000000;
   border: solid 1px gray;
 }
-article .image-section {
+
+.hero .image-section {
   display: flex;
   justify-content: flex-end; /* Mueve los elementos al final del contenedor (derecha en este caso) */
   align-items: center; /* Centra verticalmente la imagen si es necesario */
 }
-article img {
+
+.hero img {
   width: 25vw;
   position: absolute;
   top: 100;
   right: 0;
 }
 
-section {
+.services {
   width: auto;
   height: auto;
   padding: 60px;
 }
-section h2 {
+.services h2 {
   color: #85847f;
   font-size: 2em;
 }
 
-.healthcare, .furniture {
+.healthcare {
   padding-bottom: 60px;
 }
-.healthcare h2, .furniture h2 {
+.healthcare h2 {
   font-weight: 500;
   padding-bottom: 60px;
   text-align: center;
 }
-.healthcare .card-section, .furniture .card-section {
+.healthcare .card-section {
   width: auto;
   height: auto;
   display: flex;
@@ -171,7 +196,7 @@ section h2 {
        column-gap: 200px;
   row-gap: 80px;
 }
-.healthcare .product-card, .furniture .product-card {
+.healthcare .product-card {
   width: 14vw;
   height: 45vh;
   background-color: #ffefe7;
@@ -179,24 +204,24 @@ section h2 {
   padding: 20px;
   border-radius: 8px;
 }
-.healthcare .product-card .icon, .furniture .product-card .icon {
+.healthcare .product-card .icon {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   padding-bottom: 12px;
 }
-.healthcare .product-card .icon svg, .furniture .product-card .icon svg {
+.healthcare .product-card .icon svg {
   width: 28px;
   height: 28px;
 }
-.healthcare .product-card .product-image, .furniture .product-card .product-image {
+.healthcare .product-card .product-image {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.healthcare .product-card .product-image img, .furniture .product-card .product-image img {
+.healthcare .product-card .product-image img {
   width: 12vw;
   height: 30vh;
   -o-object-fit: cover;
@@ -204,9 +229,8 @@ section h2 {
   border-radius: 6px;
 }
 
-.furniture .product-card {
-  background-color: #babd8d;
-  color: white;
+.info-section {
+  background-color: #ffefe7;
 }
 
 .about-us {
@@ -236,46 +260,33 @@ section h2 {
   text-align: center;
   font-size: 1.5em;
 }
+.gallery {
+  background-color: #e47b46;
+}
+
 .gallery h2 {
   font-weight: bold;
   padding-bottom: 60px;
 }
-.gallery .gallery-images {
+
+.gallery-images {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.gallery .gallery-images img {
+.gallery-images img {
   width: 28vw;
   height: 45vh;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 5px 35%;
      object-position: 5px 35%;
-  border-radius: 16px;
+  border-radius: 100px;
+  margin: 50px;
 }
-.gallery .gallery-images img:hover {
+.gallery-images img:hover {
   transform: scale(1.1);
-}
-
-.location {
-  color: #e86424;
-}
-.location h2 {
-  padding-bottom: 60px;
-  padding-top: 60px;
-}
-.location .map {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 50px;
-}
-.location h3,
-.location p {
-  font-size: 1.5em;
 }
 
 footer {
@@ -285,6 +296,7 @@ footer {
   padding: 40px;
   color: white;
 }
+
 footer .social-media {
   display: flex;
   flex-direction: row;
@@ -292,4 +304,7 @@ footer .social-media {
   align-items: center;
   gap: 40px;
   padding-bottom: 40px;
+}
+footer .social-media :hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=main.css.map */

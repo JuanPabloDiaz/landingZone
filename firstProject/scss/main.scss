@@ -37,106 +37,114 @@ body {
   background-color: $primary-color;
   font-family: $font-stack;
 }
-
+// NAVEGATION
 nav {
   width: auto;
   @include flexCenter(row, space-between, center);
   color: $primary-text-color;
   padding: 15px;
-  .logo-container {
-    display: flex; /* Activa el modelo de caja flexible */
-    align-items: center; /* Centra verticalmente los elementos */
-  }
-
-  .logo {
-    flex: 0 0 auto; /* Evita que el logo crezca */
-    margin-right: 10px; /* Espacio entre el logo y el texto */
-    img {
-      width: 50px;
-      height: 50px;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-  }
-  .brand-name {
-    flex: 1; /* El texto ocupará el espacio restante */
-    font-size: $paragraph-size;
-  }
-  spam {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    letter-spacing: 12px;
-    font-size: 0.75em;
-    padding-right: 30px;
+  background-color: #e86424;
+}
+nav .logo-container {
+  display: flex; /* Activa el modelo de caja flexible */
+  align-items: center; /* Centra verticalmente los elementos */
+}
+nav .logo-container .logo {
+  flex: 0 0 auto; /* Evita que el logo crezca */
+  margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+nav .logo-container .logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+nav .logo-container .brand-name {
+  flex: 1; /* El texto ocupará el espacio restante */
+  font-size: $paragraph-size;
+}
+nav .logo-container .brand-name spam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 12px;
+  font-size: 0.75em;
+  padding-right: 30px;
+  color: $quaternary-color;
+}
+.icons {
+  display: flex;
+  gap: 15px;
+  @include buttonStyle;
+  .button-white {
+    background-color: $secondary-color;
     color: $quaternary-color;
   }
-  .icons {
-    display: flex;
-    gap: 15px;
-    @include buttonStyle;
-    .button-white {
-      background-color: $secondary-color;
-      color: $quaternary-color;
-    }
-  }
 }
-
-article {
+.login img {
+  width: 25px;
+  height: 25px;
+  background-color: red;
+}
+// MAIN SECTION
+// HERO
+.hero {
   width: auto;
   color: $primary-text-color;
   @include flexCenter(row, space-between, center);
   padding-left: 45px;
   padding-right: 45px;
   padding-top: 70px;
-  .hero-section {
-    @include flexCenter(column, space-evenly, flex-start);
-    padding-top: 50px;
-    gap: 25px;
-  }
-  h1 {
-    font-size: 3em;
-    padding: 0px;
-    margin: 0px;
-  }
-  h2 {
-    font-size: 2.5em;
-  }
-  .black {
-    color: $quaternary-color;
-  }
-  .white {
-    color: $secondary-color;
-  }
-  p {
-    font-size: $paragraph-size;
-    text-align: justify;
-    width: 60%;
-  }
-  @include buttonStyle;
-  .button-black {
-    background-color: $quaternary-color;
-    color: $secondary-color;
-  }
-  .button-transparent {
-    background-color: transparent;
-    color: $quaternary-color;
-    border: solid 1px gray;
-  }
-  .image-section {
-    display: flex;
-    justify-content: flex-end; /* Mueve los elementos al final del contenedor (derecha en este caso) */
-    align-items: center; /* Centra verticalmente la imagen si es necesario */
-  }
-  img {
-    width: 25vw;
-    position: absolute;
-    top: 100;
-    right: 0;
-  }
+  background-color: #d1ebf0;
+}
+.hero-section {
+  @include flexCenter(column, space-evenly, flex-start);
+  padding-top: 50px;
+  gap: 25px;
+}
+.hero h1 {
+  font-size: 3em;
+  padding: 0px;
+  margin: 0px;
+}
+.hero h2 {
+  font-size: 2.5em;
+}
+.black {
+  color: $quaternary-color;
+}
+.white {
+  color: $secondary-color;
+}
+.hero p {
+  font-size: $paragraph-size;
+  text-align: justify;
+  width: 60%;
+}
+@include buttonStyle;
+.hero .button-black {
+  background-color: $quaternary-color;
+  color: $secondary-color;
+}
+.hero .button-transparent {
+  background-color: transparent;
+  color: $quaternary-color;
+  border: solid 1px gray;
+}
+.hero .image-section {
+  display: flex;
+  justify-content: flex-end; /* Mueve los elementos al final del contenedor (derecha en este caso) */
+  align-items: center; /* Centra verticalmente la imagen si es necesario */
+}
+.hero img {
+  width: 25vw;
+  position: absolute;
+  top: 100;
+  right: 0;
 }
 
-section {
+// SERVICES
+.services {
   width: auto;
   height: auto;
   padding: 60px;
@@ -192,14 +200,11 @@ section {
     }
   }
 }
-.furniture {
-  @extend .healthcare;
-  .product-card {
-    background-color: $tertiary-color;
-    color: white;
-  }
+// INFO SECTION
+.info-section {
+  background-color: #ffefe7;
 }
-
+// ABOUT US
 .about-us {
   padding-bottom: 60px;
   h2 {
@@ -227,50 +232,42 @@ section {
     @extend .earth;
   }
 }
+// GALLERY
 .gallery {
-  h2 {
-    font-weight: bold;
-    padding-bottom: 60px;
-  }
-  .gallery-images {
-    @include flexCenter(row, space-between, center);
-    img {
-      width: 28vw;
-      height: 45vh;
-      object-fit: cover;
-      object-position: 5px 35%;
-      border-radius: 16px;
-      &:hover {
-        transform: scale(1.1);
-      }
+  background-color: #e47b46;
+}
+.gallery h2 {
+  font-weight: bold;
+  padding-bottom: 60px;
+}
+.gallery-images {
+  @include flexCenter(row, space-between, center);
+  img {
+    width: 28vw;
+    height: 45vh;
+    object-fit: cover;
+    object-position: 5px 35%;
+    border-radius: 100px;
+    margin: 50px;
+    &:hover {
+      transform: scale(1.1);
     }
   }
 }
-.location {
-  $text-color: #e86424;
-  color: $text-color;
-  h2 {
-    padding-bottom: 60px;
-    padding-top: 60px;
-  }
-  .map {
-    @include flexCenter(row, center, center);
-    padding-bottom: 50px;
-  }
-  h3,
-  p {
-    font-size: $paragraph-size;
-  }
-}
+
+// FOOTER
 footer {
   background-color: $quaternary-color;
   width: 100%;
   height: auto;
   padding: 40px;
   color: white;
-  .social-media {
-    @include flexCenter(row, center, center);
-    gap: 40px;
-    padding-bottom: 40px;
+}
+footer .social-media {
+  @include flexCenter(row, center, center);
+  gap: 40px;
+  padding-bottom: 40px;
+  :hover {
+    transform: scale(1.1);
   }
 }
