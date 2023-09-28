@@ -18,12 +18,10 @@ nav {
   align-items: center;
   color: #85847f;
   padding: 15px;
-  background-color: #e86424;
 }
 
 nav .logo-container {
   display: flex; /* Activa el modelo de caja flexible */
-  align-items: center; /* Centra verticalmente los elementos */
 }
 
 nav .logo-container .logo {
@@ -54,11 +52,11 @@ nav .logo-container .brand-name spam {
   color: #000000;
 }
 
-.icons {
+.nav-login {
   display: flex;
   gap: 15px;
 }
-.icons button {
+.nav-login button {
   background: none;
   border-style: none;
   width: 15vw;
@@ -68,10 +66,10 @@ nav .logo-container .brand-name spam {
   color: #ffefe7;
   font-size: 1em;
 }
-.icons button:hover {
+.nav-login button:hover {
   transform: scale(1.1);
 }
-.icons .button-white {
+.nav-login .button-white {
   background-color: #ffefe7;
   color: #000000;
 }
@@ -79,7 +77,8 @@ nav .logo-container .brand-name spam {
 .login img {
   width: 25px;
   height: 25px;
-  background-color: red;
+  border-radius: 50%;
+  margin-left: 10px;
 }
 
 .hero {
@@ -92,7 +91,6 @@ nav .logo-container .brand-name spam {
   padding-left: 45px;
   padding-right: 45px;
   padding-top: 70px;
-  background-color: #d1ebf0;
 }
 
 .hero-section {
@@ -104,13 +102,13 @@ nav .logo-container .brand-name spam {
   gap: 25px;
 }
 
-.hero h1 {
+.hero .hero-section h1 {
   font-size: 3em;
   padding: 0px;
   margin: 0px;
 }
 
-.hero h2 {
+.hero .hero-section h2 {
   font-size: 2.5em;
 }
 
@@ -122,10 +120,32 @@ nav .logo-container .brand-name spam {
   color: #ffefe7;
 }
 
-.hero p {
+.hero .hero-section p {
   font-size: 1.5em;
   text-align: justify;
   width: 60%;
+}
+
+.hero-text_img {
+  display: flex;
+  flex-direction: row; /* Establece la dirección del flexbox como horizontal (izquierda a derecha) */
+  align-items: center; /* Alinea verticalmente los elementos al centro */
+}
+
+.texto {
+  flex: 1; /* Hace que el texto ocupe todo el espacio restante en el contenedor */
+  padding: 10px; /* Espacio alrededor del texto para mejorar la legibilidad */
+}
+
+.img-pc {
+  flex: 1; /* Hace que la imagen ocupe todo el espacio restante en el contenedor */
+  text-align: center; /* Alinea la imagen a la derecha dentro de su div */
+}
+
+.img-pc img {
+  max-width: 100%; /* Asegura que la imagen no se desborde del div */
+  height: auto; /* Mantiene la proporción de aspecto de la imagen */
+  text-align: center;
 }
 
 button {
@@ -142,28 +162,15 @@ button:hover {
   transform: scale(1.1);
 }
 
-.hero .button-black {
+.hero-buttons .button-black {
   background-color: #000000;
   color: #ffefe7;
 }
 
-.hero .button-transparent {
+.hero-buttons .button-transparent {
   background-color: transparent;
   color: #000000;
   border: solid 1px gray;
-}
-
-.hero .image-section {
-  display: flex;
-  justify-content: flex-end; /* Mueve los elementos al final del contenedor (derecha en este caso) */
-  align-items: center; /* Centra verticalmente la imagen si es necesario */
-}
-
-.hero img {
-  width: 25vw;
-  position: absolute;
-  top: 100;
-  right: 0;
 }
 
 .services {
@@ -275,6 +282,7 @@ button:hover {
   justify-content: space-between;
   align-items: center;
 }
+
 .gallery-images img {
   width: 28vw;
   height: 45vh;
@@ -285,6 +293,7 @@ button:hover {
   border-radius: 100px;
   margin: 50px;
 }
+
 .gallery-images img:hover {
   transform: scale(1.1);
 }

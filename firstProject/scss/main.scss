@@ -43,11 +43,12 @@ nav {
   @include flexCenter(row, space-between, center);
   color: $primary-text-color;
   padding: 15px;
-  background-color: #e86424;
+  // background-color: #e86424;
 }
 nav .logo-container {
+  // background-color: #2b17e0;
   display: flex; /* Activa el modelo de caja flexible */
-  align-items: center; /* Centra verticalmente los elementos */
+  // align-items: center; /* Centra verticalmente los elementos */
 }
 nav .logo-container .logo {
   flex: 0 0 auto; /* Evita que el logo crezca */
@@ -72,7 +73,7 @@ nav .logo-container .brand-name spam {
   padding-right: 30px;
   color: $quaternary-color;
 }
-.icons {
+.nav-login {
   display: flex;
   gap: 15px;
   @include buttonStyle;
@@ -84,7 +85,9 @@ nav .logo-container .brand-name spam {
 .login img {
   width: 25px;
   height: 25px;
-  background-color: red;
+  // background-color: red;
+  border-radius: 50%;
+  margin-left: 10px;
 }
 // MAIN SECTION
 // HERO
@@ -95,19 +98,19 @@ nav .logo-container .brand-name spam {
   padding-left: 45px;
   padding-right: 45px;
   padding-top: 70px;
-  background-color: #d1ebf0;
+  // background-color: #d1ebf0;
 }
 .hero-section {
   @include flexCenter(column, space-evenly, flex-start);
   padding-top: 50px;
   gap: 25px;
 }
-.hero h1 {
+.hero .hero-section h1 {
   font-size: 3em;
   padding: 0px;
   margin: 0px;
 }
-.hero h2 {
+.hero .hero-section h2 {
   font-size: 2.5em;
 }
 .black {
@@ -116,31 +119,40 @@ nav .logo-container .brand-name spam {
 .white {
   color: $secondary-color;
 }
-.hero p {
+.hero .hero-section p {
   font-size: $paragraph-size;
   text-align: justify;
   width: 60%;
 }
+// TEXT & IMAGE
+.hero-text_img {
+  display: flex;
+  flex-direction: row; /* Establece la dirección del flexbox como horizontal (izquierda a derecha) */
+  align-items: center; /* Alinea verticalmente los elementos al centro */
+}
+.texto {
+  flex: 1; /* Hace que el texto ocupe todo el espacio restante en el contenedor */
+  padding: 10px; /* Espacio alrededor del texto para mejorar la legibilidad */
+}
+.img-pc {
+  flex: 1; /* Hace que la imagen ocupe todo el espacio restante en el contenedor */
+  text-align: center; /* Alinea la imagen a la derecha dentro de su div */
+}
+.img-pc img {
+  max-width: 100%; /* Asegura que la imagen no se desborde del div */
+  height: auto; /* Mantiene la proporción de aspecto de la imagen */
+  text-align: center;
+}
+// BUTTONS
 @include buttonStyle;
-.hero .button-black {
+.hero-buttons .button-black {
   background-color: $quaternary-color;
   color: $secondary-color;
 }
-.hero .button-transparent {
+.hero-buttons .button-transparent {
   background-color: transparent;
   color: $quaternary-color;
   border: solid 1px gray;
-}
-.hero .image-section {
-  display: flex;
-  justify-content: flex-end; /* Mueve los elementos al final del contenedor (derecha en este caso) */
-  align-items: center; /* Centra verticalmente la imagen si es necesario */
-}
-.hero img {
-  width: 25vw;
-  position: absolute;
-  top: 100;
-  right: 0;
 }
 
 // SERVICES
@@ -242,17 +254,17 @@ nav .logo-container .brand-name spam {
 }
 .gallery-images {
   @include flexCenter(row, space-between, center);
-  img {
-    width: 28vw;
-    height: 45vh;
-    object-fit: cover;
-    object-position: 5px 35%;
-    border-radius: 100px;
-    margin: 50px;
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
+}
+.gallery-images img {
+  width: 28vw;
+  height: 45vh;
+  object-fit: cover;
+  object-position: 5px 35%;
+  border-radius: 100px;
+  margin: 50px;
+}
+.gallery-images img:hover {
+  transform: scale(1.1);
 }
 
 // FOOTER
