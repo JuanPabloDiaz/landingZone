@@ -267,6 +267,47 @@ nav .logo-container .brand-name spam {
   transform: scale(1.1);
 }
 
+// testing
+.testing {
+  display: flex;
+  flex-direction: row; /* Establece la dirección del flexbox como horizontal (izquierda a derecha) */
+  align-items: center; /* Alinea verticalmente los elementos al centro */
+}
+
+.texto {
+  flex: 1; /* Hace que el texto ocupe todo el espacio restante en el contenedor */
+  padding: 10px; /* Espacio alrededor del texto para mejorar la legibilidad */
+}
+
+.imagen {
+  flex: 1; /* Hace que la imagen ocupe todo el espacio restante en el contenedor */
+  text-align: right; /* Alinea la imagen a la derecha dentro de su div */
+}
+
+.imagen img {
+  max-width: 100%; /* Asegura que la imagen no se desborde del div */
+  height: auto; /* Mantiene la proporción de aspecto de la imagen */
+}
+
+// TABLE
+.tabla-test {
+  display: flex;
+  flex-direction: column; /* Establece la dirección de la tabla como vertical */
+  border: 1px solid #000; /* Agrega un borde a la tabla (opcional) */
+}
+
+.tabla-test .fila {
+  display: flex;
+  /* Añade espaciado entre filas (espacio entre elementos .fila) */
+  margin-bottom: 10px;
+}
+
+.tabla-test .celda {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #000; /* Agrega un borde a las celdas (opcional) */
+}
+// *****************************************************
 // FOOTER
 footer {
   background-color: $quaternary-color;
@@ -274,12 +315,46 @@ footer {
   height: auto;
   padding: 40px;
   color: white;
+  // *******
+  display: flex;
+  flex-direction: column; /* Establece la dirección de la tabla como vertical */
+}
+// TABLE-FOOTER
+
+footer .fila {
+  display: flex;
+  /* Añade espaciado entre filas (espacio entre elementos .fila) */
+  margin-bottom: 5px;
+}
+footer h4 {
+  font-weight: bold;
+  color: #f1e255;
+}
+
+footer .celda {
+  flex: 1;
+  padding: 10px;
 }
 footer .social-media {
   @include flexCenter(row, center, center);
-  gap: 40px;
-  padding-bottom: 40px;
-  :hover {
-    transform: scale(1.1);
-  }
+  gap: 3px;
+  padding: 10px;
+}
+footer .social-media img {
+  width: 30px;
+  height: 30px;
+}
+footer .social-media img:hover {
+  transform: scale(1.1);
+}
+
+.end {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-top: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: aliceblue;
 }
