@@ -157,8 +157,17 @@ nav .logo-container .brand-name spam {
 }
 
 // *************************MAP SECTION****************************
-// // testing
-.testing {
+.map-section {
+  width: auto;
+  height: auto;
+  padding: 60px;
+  h2 {
+    color: $primary-text-color;
+    font-size: 2em;
+    text-align: center;
+  }
+}
+.map-container {
   display: flex;
   flex-direction: row; /* Establece la dirección del flexbox como horizontal (izquierda a derecha) */
   align-items: center; /* Alinea verticalmente los elementos al centro */
@@ -217,7 +226,7 @@ nav .logo-container .brand-name spam {
     font-size: 2em;
   }
 }
-.healthcare {
+.products {
   padding-bottom: 60px;
   h2 {
     font-weight: 500;
@@ -296,18 +305,18 @@ nav .logo-container .brand-name spam {
     @extend .earth;
   }
 }
-// GALLERY
-.gallery {
+// EVENTOS
+.events {
   background-color: #e47b46;
 }
-.gallery h2 {
+.events h2 {
   font-weight: bold;
   padding-bottom: 60px;
 }
-.gallery-images {
+.events-images {
   @include flexCenter(row, space-between, center);
 }
-.gallery-images img {
+.events-images img {
   width: 28vw;
   height: 45vh;
   object-fit: cover;
@@ -315,7 +324,7 @@ nav .logo-container .brand-name spam {
   border-radius: 100px;
   margin: 50px;
 }
-.gallery-images img:hover {
+.events-images img:hover {
   transform: scale(1.1);
 }
 

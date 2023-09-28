@@ -175,7 +175,18 @@ button:hover {
   border: solid 1px gray;
 }
 
-.testing {
+.map-section {
+  width: auto;
+  height: auto;
+  padding: 60px;
+}
+.map-section h2 {
+  color: #85847f;
+  font-size: 2em;
+  text-align: center;
+}
+
+.map-container {
   display: flex;
   flex-direction: row; /* Establece la dirección del flexbox como horizontal (izquierda a derecha) */
   align-items: center; /* Alinea verticalmente los elementos al centro */
@@ -234,15 +245,15 @@ button:hover {
   font-size: 2em;
 }
 
-.healthcare {
+.products {
   padding-bottom: 60px;
 }
-.healthcare h2 {
+.products h2 {
   font-weight: 500;
   padding-bottom: 60px;
   text-align: center;
 }
-.healthcare .card-section {
+.products .card-section {
   width: auto;
   height: auto;
   display: flex;
@@ -254,7 +265,7 @@ button:hover {
        column-gap: 200px;
   row-gap: 80px;
 }
-.healthcare .product-card {
+.products .product-card {
   width: 14vw;
   height: 45vh;
   background-color: #ffefe7;
@@ -262,24 +273,24 @@ button:hover {
   padding: 20px;
   border-radius: 8px;
 }
-.healthcare .product-card .icon {
+.products .product-card .icon {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   padding-bottom: 12px;
 }
-.healthcare .product-card .icon svg {
+.products .product-card .icon svg {
   width: 28px;
   height: 28px;
 }
-.healthcare .product-card .product-image {
+.products .product-card .product-image {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.healthcare .product-card .product-image img {
+.products .product-card .product-image img {
   width: 12vw;
   height: 30vh;
   -o-object-fit: cover;
@@ -318,23 +329,23 @@ button:hover {
   text-align: center;
   font-size: 1.5em;
 }
-.gallery {
+.events {
   background-color: #e47b46;
 }
 
-.gallery h2 {
+.events h2 {
   font-weight: bold;
   padding-bottom: 60px;
 }
 
-.gallery-images {
+.events-images {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.gallery-images img {
+.events-images img {
   width: 28vw;
   height: 45vh;
   -o-object-fit: cover;
@@ -345,7 +356,7 @@ button:hover {
   margin: 50px;
 }
 
-.gallery-images img:hover {
+.events-images img:hover {
   transform: scale(1.1);
 }
 
