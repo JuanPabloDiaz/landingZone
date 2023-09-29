@@ -1,2 +1,3 @@
-# brothers
-Colective projects using Figma, HTML, CSS, Sass and JS (For now)
+# Brothers
+
+Colective projects using Figma, HTML, CSS, Sass and JS (For now...)
