@@ -452,18 +452,18 @@ footer a {
   }
   // LOGIN
   // Ejemplo de media query para ajustar el diseño de los botones en pantallas pequeñas
-  .nav-login {
-    flex-direction: column; // Cambiar la dirección de los botones
-    align-items: center; // Centrar horizontalmente
-    button {
-      width: 80%; // Reducir el ancho de los botones
-    }
-  }
-  .login img {
-    width: 15px;
-    height: 15px;
-    margin-left: 0; // Eliminar el margen izquierdo en las imágenes de inicio de sesión
-  }
+  // .nav-login {
+  //   flex-direction: column; // Cambiar la dirección de los botones
+  //   align-items: center; // Centrar horizontalmente
+  //   button {
+  //     width: 80%; // Reducir el ancho de los botones
+  //   }
+  // }
+  // .login img {
+  //   width: 15px;
+  //   height: 15px;
+  //   margin-left: 0; // Eliminar el margen izquierdo en las imágenes de inicio de sesión
+  // }
   // Otros ajustes específicos para pantallas pequeñas aquí
 }
 

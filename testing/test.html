@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Dividida con Curva</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: flex;
+        height: 100%;
+        overflow: hidden; /* Para ocultar parte de la curva que se sale de los límites */
+        position: relative; /* Para posicionar elementos hijos relativamente */
+      }
+
+      .rojo {
+        flex: 1;
+        background-color: red;
+      }
+
+      .curva {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300px; /* Ancho de la imagen de la curva */
+        height: 100%;
+        background: url("./img/curv.png") no-repeat center center; /* Ruta a la imagen de la curva */
+      }
+
+      .verde {
+        flex: 1;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="rojo"></div>
+      <div class="curva"></div>
+      <div class="verde"></div>
+    </div>
+  </body>
+</html>
