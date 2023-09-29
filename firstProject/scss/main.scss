@@ -251,9 +251,9 @@ nav .logo-container .brand-name span {
     .icon {
       width: 100%;
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
       padding-bottom: 12px;
-      svg {
+      img {
         width: 28px;
         height: 28px;
       }
@@ -269,6 +269,25 @@ nav .logo-container .brand-name span {
         height: 30vh;
         object-fit: cover;
         border-radius: 6px;
+      }
+    }
+    h3 {
+      font-weight: 500;
+      font-size: 1.2em;
+    }
+    .product-info {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 12px;
+
+      p {
+        font-size: 0.8em;
+        text-align: justify;
+        display: block;
+        justify-content: space-between;
       }
     }
   }
