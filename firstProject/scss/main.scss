@@ -4,7 +4,7 @@ $tertiary-color: #babd8d;
 $primary-text-color: #85847f;
 $quaternary-color: #000000;
 $font-stack: "IBM Plex Sans", sans-serif;
-$paragraph-size: 1.5em;
+$paragraph-size: 1em;
 
 @mixin flexCenter($direction, $content, $align) {
   display: flex;
@@ -64,7 +64,7 @@ nav .logo-container .brand-name {
   flex: 1; /* El texto ocupará el espacio restante */
   font-size: $paragraph-size;
 }
-nav .logo-container .brand-name spam {
+nav .logo-container .brand-name span {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -397,4 +397,62 @@ footer .social-media img:hover {
 footer a {
   text-decoration: none;
   color: aliceblue;
+}
+
+// *****************************************************
+// MEDIA QUERIES
+
+//BODY
+// Media query para pantallas medianas
+@media (min-width: 768px) {
+  $paragraph-size: 0.7em;
+  body {
+    font-size: $paragraph-size;
+  }
+  // NAVEGATION
+  // Ejemplo de media query para ajustar el diseño del encabezado en pantallas pequeñas
+  nav {
+    padding: 10px; // Reducir el espacio en el encabezado
+  }
+  nav .logo-container {
+    flex-direction: calc(row); // Cambiar la dirección del logo y el texto
+    align-items: center; // Centrar verticalmente
+    // background-color: #2b17e0;
+  }
+  nav .logo-container .logo {
+    margin-right: 5px; // Eliminar el margen entre el logo y el texto
+  }
+  nav .logo-container .brand-name {
+    text-align: center; // Centrar el texto
+    padding-top: 10px; // Agregar espacio superior
+  }
+  nav .logo-container .brand-name span {
+    letter-spacing: 8px;
+    font-size: 0.75em;
+    padding-right: 20px;
+  }
+  // LOGIN
+  // Ejemplo de media query para ajustar el diseño de los botones en pantallas pequeñas
+  .nav-login {
+    flex-direction: column; // Cambiar la dirección de los botones
+    align-items: center; // Centrar horizontalmente
+    button {
+      width: 80%; // Reducir el ancho de los botones
+    }
+  }
+  .login img {
+    width: 15px;
+    height: 15px;
+    margin-left: 0; // Eliminar el margen izquierdo en las imágenes de inicio de sesión
+  }
+  // Otros ajustes específicos para pantallas pequeñas aquí
+}
+
+// Media query para pantallas grandes
+@media (min-width: 1024px) {
+  $paragraph-size: 1.2em;
+  body {
+    font-size: $paragraph-size;
+  }
+  // Otros estilos específicos para pantallas grandes aquí
 }
