@@ -29,4 +29,4 @@ Took a class on Platzi and follow a related project.
 
 Resources list that I find helpful and would like to give credit to.
 
-- [Link](#)
+- [Figma](https://www.figma.com/file/74haWKkC7zMGhtRe9rp43A/AB-InBev?type=design&node-id=0-1&mode=design&t=euVRuZIIZxEOEgxS-0)
