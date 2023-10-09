@@ -32,7 +32,7 @@ export default function Example() {
           <div className="flex lg:hidden ">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white hover:text-gray-400"
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
@@ -45,7 +45,7 @@ export default function Example() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-white"
+                className="text-sm font-semibold leading-6 text-white hover:underline hover:text-gray-400"
               >
                 {item.name}
               </a>
@@ -63,7 +63,7 @@ export default function Example() {
             <div className="flex items-center justify-end">
               <button
                 type="button"
-                className="-m-2.5 rounded-md p-2.5 text-white"
+                className="-m-2.5 rounded-md p-2.5 text-white  hover:text-gray-400"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
@@ -105,7 +105,7 @@ export default function Example() {
                 <div className="mt-10 flex items-center justify-left gap-x-6">
                   <a
                     href="./"
-                    className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-white-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    className="rounded-md bg-white hover:bg-[#92989f] px-3.5 py-2.5 text-sm font-semibold text-black hover:text-[#132577] shadow-sm hover:bg-white-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                     EXPLORE MORE
                   </a>
