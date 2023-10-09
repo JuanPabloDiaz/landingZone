@@ -25,7 +25,7 @@ export default function Example() {
     >
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
-          className="flex items-center justify-end p-6 lg:px-8"
+          className="flex items-center justify-end p-12 lg:px-20"
           aria-label="Global"
         >
           {/* Hamburger menu icon: */}
@@ -90,29 +90,29 @@ export default function Example() {
       </header>
 
       <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div className="mx-auto max-w-6xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-8xl py-32 sm:py-48 lg:py-56">
           {" "}
           <div>
-            <div className="flex justify-around">
-              <div className="text-left">
-                <h1 className="text-4xl font-bold tracking-tight text-slate-100 sm:text-5xl">
+            <div className="flex justify-around ">
+              <div className="text-left max-w-3xl">
+                <h1 className="text-3xl font-bold tracking-tight text-slate-100 sm:text-5xl">
                   Software solution providers that help brands thrive and stand
                   out
                 </h1>
-                <p className="mt-6 text-lg leading-8 text-slate-300">
+                <p className="mt-12 text-lg leading-8 text-slate-300">
                   La idea del proyecto va aca
                 </p>
                 <div className="mt-10 flex items-center justify-left gap-x-6">
                   <a
                     href="./"
-                    className="rounded-md bg-white hover:bg-[#92989f] px-3.5 py-2.5 text-sm font-semibold text-black hover:text-[#132577] shadow-sm hover:bg-white-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    className="mt-32 rounded-md bg-white hover:bg-[#92989f] px-3.5 py-2.5 text-sm font-semibold text-black hover:text-[#132577] shadow-sm hover:bg-white-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                     EXPLORE MORE
                   </a>
                 </div>
               </div>{" "}
               <img
-                className="h-auto w-auto max-w-[300px] max-h-[300px] object-cover rounded-md shadow-md"
+                className="h-auto w-auto max-w-lg object-cover hidden md:flex md:w-96 md:h-96"
                 src={require("../assets/img/1-hero535.png")}
                 alt="img"
               />
