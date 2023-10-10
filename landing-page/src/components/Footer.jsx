@@ -35,7 +35,7 @@ export default () => {
           name: "Facebook",
         },
         {
-          href: "javascript:void()",
+          href: "https://twitter.com/1diazdev",
           name: "Twitter",
         },
         {
@@ -43,7 +43,7 @@ export default () => {
           name: "Instagram",
         },
         {
-          href: "javascript:void()",
+          href: "https://www.linkedin.com/in/1diazdev/",
           name: "LinkedIn",
         },
       ],
@@ -52,8 +52,8 @@ export default () => {
       label: "Contact Us",
       items: [
         {
-          href: "javascript:void()",
-          name: "emailaddress@mail.com",
+          href: "mailto:jpdiaz@gmx.com?subject = From%your%Landing%Page%with%React&body = Hello%Juan",
+          name: "jpdiaz@gmx.com",
         },
       ],
     },
@@ -77,7 +77,7 @@ export default () => {
                 <li key={idx}>
                   <a
                     href={el.href}
-                    className="hover:underline hover:text-indigo-600"
+                    className="hover:underline hover:text-[#ffc107]"
                   >
                     {el.name}
                   </a>
