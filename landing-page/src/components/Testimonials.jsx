@@ -4,22 +4,22 @@
 export default () => {
   const testimonials = [
     {
-      avatar: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
-      name: "Martin escobar",
-      title: "Founder of meta",
+      avatar: "https://randomuser.me/api/portraits/men/83.jpg",
+      name: "Martin Escobar",
+      title: "Founder of Kenzo US",
       quote:
-        "Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+        "This team is professional, knowledgeable, and always goes above and beyond to ensure our needs are met.",
     },
     {
-      avatar: "https://randomuser.me/api/portraits/men/46.jpg",
-      name: "Simon andrew",
+      avatar: "https://randomuser.me/api/portraits/men/31.jpg",
+      name: "Simon Andrew",
       title: "Software engineer",
       quote:
-        "Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+        "I highly recommend their services to anyone looking for top-notch quality and exceptional customer service.",
     },
     {
-      avatar: "https://randomuser.me/api/portraits/men/86.jpg",
-      name: "Micheal worin",
+      avatar: require("../assets/img/8-testimon120.png"),
+      name: "Julia Worin",
       title: "Product designer",
       quote:
         "Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum..",
@@ -30,10 +30,12 @@ export default () => {
     <section className="relative py-14">
       <div className="relative z-10 max-w-screen-xl mx-auto px-4 md:px-8">
         <div className="max-w-xl sm:text-center md:mx-auto">
-          <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+          <h2 className="text-4xl tracking-tight text-[#132577] sm:text-2xl">
             TESTIMONIALS
-          </h3>
-          <p className="mt-3 text-gray-600">Our successful clients</p>
+          </h2>
+          <p className="mt-2 text-3xl font-bold leading-8 text-black-600">
+            Our successful clients
+          </p>
         </div>
         <div className="mt-12">
           <ul className="grid items-center gap-6 sm:grid-cols-2 lg:grid-cols-3">
