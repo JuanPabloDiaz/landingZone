@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import ServicesInfo from "./components/Services-info";
@@ -11,6 +12,15 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>LP Juan Diaz 2023</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+        <meta
+          name="description"
+          content="Landing Page Using React and Tailwind CSS"
+        />
+      </Helmet>
       <Hero />
       <Services />
       <ServicesInfo />
