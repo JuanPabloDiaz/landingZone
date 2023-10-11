@@ -2,10 +2,10 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import img1 from "../assets/img/10-project295.png";
-import img2 from "../assets/img/11-project295.png";
-import img3 from "../assets/img/12-project295.png";
-import img4 from "../assets/img/13-team380.png";
+import img1 from "../assets/img/9-project295.png";
+import img2 from "../assets/img/10-project295.png";
+import img3 from "../assets/img/11-project295.png";
+import img4 from "../assets/img/12-project295.png";
 const OpenCards = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);
 
@@ -14,11 +14,16 @@ const OpenCards = () => {
   };
 
   const cardVariants = {
-    expanded: { width: "400px" },
-    collapsed: { width: "200px" },
+    expanded: { width: "600px" },
+    collapsed: { width: "300px" },
   };
   const cardImages = [img1, img2, img3, img4];
-
+  const cardTitle = [
+    "Our Mission",
+    "Our Vision",
+    "Our Company",
+    "Our Customer",
+  ];
   const cardDescriptions = [
     "this is a description, with more text than the other cards",
     "this is a description, with more text than the other cards",
@@ -26,12 +31,14 @@ const OpenCards = () => {
     "this is a description, with more text than the other cards",
   ];
   return (
-    <section className="py-16 pb-[300px] bg-slate-600">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-extrabold text-white">
-          Feautured Projects
-        </h1>
-        <p className="mt-4 text-xl text-gray-300">Check the latest one</p>
+    <section className="py-16 pb-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 className="text-4xl tracking-tight text-[#132577] sm:text-2xl">
+          WE LOVE OUR WORK
+        </h2>
+        <p className="mt-2 text-3xl font-bold leading-8 text-black-600">
+          FIND OUT MORE
+        </p>
       </div>
       <div className="mt-12 flex flex-col md:flex-row justify-center items-center gap-5">
         {[0, 1, 2, 3].map((index) => (
@@ -50,9 +57,9 @@ const OpenCards = () => {
             }}
           >
             <div className="card-content h-full flex flex-col justify-end">
-              <div className="card-footer rounded-b-[20px] bg-gray-800 bg-opacity-75 min-h-[100px] flex flex-col items-center justify-center">
+              <div className="card-footer rounded-b-[20px] bg-[#132577] bg-opacity-75 min-h-[100px] flex flex-col items-center justify-center">
                 <h2 className="text-xl font-bold text-white">
-                  Card {index + 1}
+                  {cardTitle[index]}
                 </h2>
                 {index === expandedIndex && (
                   <p className="text-white text-center">

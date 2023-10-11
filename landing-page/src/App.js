@@ -12,15 +12,15 @@ import Company from "./components/Company";
 function App() {
   return (
     <div>
-      {/* <Hero />
+      <Hero />
       <Services />
       <ServicesInfo />
       <About />
+      <Company />
       <Testimonials />
       <Projects />
       <Team />
-      <Footer /> */}
-      <Company />
+      <Footer />
     </div>
   );
 }
