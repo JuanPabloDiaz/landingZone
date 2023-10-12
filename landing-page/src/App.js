@@ -13,13 +13,14 @@ function App() {
   return (
     <div>
       <Helmet>
+        <title>Landing Page JD 2023</title>
         <meta charSet="utf-8" />
-        <title>LP Juan Diaz 2023</title>
-        <link rel="canonical" href="http://mysite.com/example" />
         <meta
           name="description"
           content="Landing Page Using React and Tailwind CSS"
         />
+        <meta name="keywords" content="react, tailwind, landing page" />
+        <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
       <Hero />
       <Services />
