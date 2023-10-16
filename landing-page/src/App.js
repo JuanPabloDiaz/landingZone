@@ -8,6 +8,7 @@ import Testimonials from "./components/Testimonials";
 import Projects from "./components/Projects";
 import Team from "./components/Team";
 import Footer from "./components/Footer";
+import Company from "./components/Company";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Services />
       <ServicesInfo />
       <About />
+      <Company />
       <Testimonials />
       <Projects />
       <Team />
