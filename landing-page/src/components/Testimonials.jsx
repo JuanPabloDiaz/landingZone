@@ -27,7 +27,7 @@ export default () => {
   ];
 
   return (
-    <section className="relative py-14">
+    <section name="testimonials" className="relative py-14">
       <div className="relative z-10 max-w-screen-xl mx-auto px-4 md:px-8">
         <div className="max-w-xl sm:text-center md:mx-auto">
           <h2 className="text-4xl tracking-tight text-[#132577] sm:text-2xl">
