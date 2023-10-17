@@ -36,7 +36,7 @@ const posts = [
 
 export default function Example() {
   return (
-    <div className="bg-white pt-24 pb-6 sm:pt-32 sm:pb-6">
+    <div name="services" className="bg-white pt-24 pb-6 sm:pt-32 sm:pb-6">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto lg:mx-0 text-center">
           <h2 className="text-4xl tracking-tight text-[#132577] sm:text-2xl">

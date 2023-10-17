@@ -1,6 +1,6 @@
 export default () => {
   return (
-    <section className="py-14">
+    <section name="about" className="py-14">
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 gap-16 justify-between md:px-8 lg:flex">
         <div>
           <div className="max-w-xl space-y-3">

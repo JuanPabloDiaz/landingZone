@@ -41,7 +41,7 @@ export default () => {
   ];
 
   return (
-    <section className="py-14">
+    <section name="projects" className="py-14">
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 gap-x-12 items-start justify-between lg:flex md:px-8">
         <div className="sm:hidden lg:block lg:max-w-xl">
           <div className="flex-none mt-6 md:mt-0 lg:mt-16">

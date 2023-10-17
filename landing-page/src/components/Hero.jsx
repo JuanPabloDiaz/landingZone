@@ -2,21 +2,23 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import background from "../assets/img/banner-background1440.png";
+import { Link } from "react-scroll";
 
 const navigation = [
-  { name: "Home", href: "#" },
-  { name: "About Us", href: "#" },
-  { name: "Portfolio", href: "#" },
-  { name: "Expertise", href: "#" },
-  { name: "Clients", href: "#" },
-  { name: "Services", href: "#" },
-  { name: "Contact Us", href: "#" },
+  { name: "Home", section: "home" },
+  { name: "About Us", section: "about" },
+  { name: "Portfolio", section: "projects" },
+  { name: "Expertise", section: "team" },
+  { name: "Clients", section: "testimonials" },
+  { name: "Services", section: "services" },
+  { name: "Contact Us", section: "footer" },
 ];
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <div
+      name="home"
       style={{
         backgroundImage: `url(${background})`,
         backgroundRepeat: "no-repeat",
@@ -42,13 +44,21 @@ export default function Example() {
           {/* Desktop Navigation: */}
           <div className="hidden lg:flex lg:gap-x-12 lg:justify-end">
             {navigation.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
+              <Link
+                to={item.section}
+                smooth={true}
+                duration={500}
                 className="text-sm font-semibold leading-6 text-white hover:underline hover:text-gray-400"
               >
                 {item.name}
-              </a>
+              </Link>
+              // <a
+              //   key={item.name}
+              //   href={item.href}
+              //   className="text-sm font-semibold leading-6 text-white hover:underline hover:text-gray-400"
+              // >
+              //   {item.name}
+              // </a>
             ))}
           </div>
         </nav>
@@ -74,13 +84,21 @@ export default function Example() {
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
+                    // <a
+                    //   key={item.name}
+                    //   href={item.href}
+                    //   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50 hover:text-zinc-900"
+                    // >
+                    //   {item.name}
+                    // </a>
+                    <Link
+                      to={item.section}
+                      smooth={true}
+                      duration={500}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50 hover:text-zinc-900"
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -110,7 +128,7 @@ export default function Example() {
                     EXPLORE MORE
                   </a>
                 </div>
-              </div>{" "}
+              </div>
               <img
                 className="h-auto w-auto max-w-lg object-cover hidden md:flex md:w-96 md:h-96"
                 src={require("../assets/img/1-hero535.png")}

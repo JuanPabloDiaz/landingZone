@@ -60,7 +60,10 @@ export default () => {
   ];
 
   return (
-    <footer className="text-white bg-[#132577] px-40 py-5 max-w-screen-2xl mx-auto md:px-8">
+    <footer
+      name="footer"
+      className="text-white bg-[#132577] px-40 py-5 max-w-screen-2xl mx-auto md:px-8"
+    >
       <div className="gap-6 justify-between md:flex">
         <div className="flex-1">
           <div className="max-w-xs">
