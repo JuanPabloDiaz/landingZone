@@ -2,6 +2,29 @@
 
 - [Figma Theme](<https://www.figma.com/file/iJhszXggNzjpQKkF4pm840/IT-WEBSITE-(Community)?type=design&node-id=0-1&mode=design&t=v8dq6vfVKJpCJclk-0>)
 
+## Structure:
+src/
+├── components/
+│ ├── Hero.jsx
+│ ├── Services.jsx
+│ ├── Service-info.jsx
+│ ├── About.jsx
+│ ├── Testimonials.jsx
+│ ├── Projects.jsx
+│ ├── Team.jsx
+│ └── Footer.jsx
+├── assets/
+│ └── img/
+│ └─── image.png
+│ └── icons/
+│ └─── icons.png
+│── App.jsx
+|── index.js
+|── index.css
+|── tailwind.config.js
+|── readme.md
+|── package.json
+|── package-lock.json
 Buscar un...
 
 - Cookie cuter??
