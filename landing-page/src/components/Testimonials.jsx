@@ -28,7 +28,7 @@ export default () => {
       name: "Julia Worin",
       title: "Product designer",
       quote:
-        "Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum..",
+        "They deliver exceptional results and expertise that's second to none. Highly recommended!",
     },
   ];
 
