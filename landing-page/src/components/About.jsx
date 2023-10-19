@@ -10,27 +10,29 @@ export default () => {
             <p className="text-gray-800 text-3xl font-bold sm:text-2xl">
               We Are Leaders in It Solutions
             </p>
-            <p>
-              Aliquam a diam gravida, pretium justo non, facilisis eros. Integer
-              posuere semper condimentum. Praesent tortor dui, auctor a
-              condimentum vitae, aliquam at quam. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Suspendisse consequat lacus a sapien
-              pretium, sit amet finibus ex.
+            <p className="text-justify">
+              At the forefront of technological innovation, we are the leaders
+              in IT solutions. With a relentless commitment to excellence, we
+              provide cutting-edge technology services and solutions to help
+              businesses thrive in the digital age. Our passion for innovation
+              drives us to deliver top-notch IT solutions that transform your
+              business and empower your success. Welcome to a world where
+              technology meets expertise – welcome to our world."
             </p>
           </div>
           <div className="mt-6 max-w-lg lg:max-w-none">
             <ul className="space-y-4 flex flex-col md:flex-row md:flex-wrap md:space-x-3">
               <li className="list-disc list-inside text-black font-semibold">
-                Quisque metus felis in dictum 1.
+                Vision and Commitment
               </li>
               <li className="list-disc list-inside text-black font-semibold">
-                Mauris sollicitudin nunc quis at 2.
+                Expertise and Innovation
               </li>
               <li className="list-disc list-inside text-black font-semibold">
-                Sed ac ligula nec felis modo 3.
+                Customer-Centric Approach
               </li>
               <li className="list-disc list-inside text-black font-semibold">
-                In massa erat, ac dictum alis 4.
+                Company Culture
               </li>
             </ul>
           </div>
