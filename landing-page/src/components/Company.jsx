@@ -2,10 +2,10 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import img1 from "../assets/img/9-project295.png";
-import img2 from "../assets/img/10-project295.png";
-import img3 from "../assets/img/11-project295.png";
-import img4 from "../assets/img/12-project295.png";
+import missionImg from "../assets/img/19-mission.jpg";
+import visionImg from "../assets/img/20-vision.jpg";
+import companyImg from "../assets/img/21-company.jpg";
+import customerImg from "../assets/img/22-customer.jpg";
 const OpenCards = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);
 
@@ -17,7 +17,7 @@ const OpenCards = () => {
     expanded: { width: "600px" },
     collapsed: { width: "300px" },
   };
-  const cardImages = [img1, img2, img3, img4];
+  const cardImages = [missionImg, visionImg, companyImg, customerImg];
   const cardTitle = [
     "Our Mission",
     "Our Vision",
