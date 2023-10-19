@@ -4,7 +4,7 @@ const posts = [
     title: "Software Development",
     href: "#",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "From web applications to mobile apps, our team of experienced developers can bring your ideas to life. We specialize in creating custom software solutions tailored to your specific needs, using the latest technologies and best practices. Let us help you build the software that will take your business to the next level.",
     buttonLM: { title: "Learn More >", href: "#" },
   },
   // More posts...
@@ -13,7 +13,7 @@ const posts = [
     title: "AI Programmer & Technical",
     href: "#",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "Our team of AI programmers and technical experts are dedicated to creating cutting-edge solutions that leverage the latest advancements in artificial intelligence. From natural language processing to computer vision, we have the expertise to help you build intelligent systems that can learn, reason, and adapt. Let us help you harness the power of AI to transform your business.",
     buttonLM: { title: "Learn More >", href: "#" },
   },
   {
@@ -21,7 +21,7 @@ const posts = [
     title: "System Application Development",
     href: "#",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "Whether you need a custom enterprise solution or a specialized system for your business, our team of expert developers can help. We specialize in system application development, using the latest technologies and best practices to create powerful, scalable, and secure systems that meet your unique needs. Let us help you build the system that will take your business to the next level.",
     buttonLM: { title: "Learn More >", href: "#" },
   },
   {
@@ -29,7 +29,7 @@ const posts = [
     title: "Server and Network Solutions",
     href: "#",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "Our team of experienced server and network engineers can help you design, deploy, and maintain the infrastructure you need to keep your business running smoothly. From cloud-based solutions to on-premises systems, we have the expertise to help you build a reliable and secure network that meets your specific needs. Let us help you optimize your server and network solutions for maximum performance and uptime.",
     buttonLM: { title: "Learn More >", href: "#" },
   },
 ];
