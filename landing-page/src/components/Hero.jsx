@@ -104,7 +104,10 @@ export default function Example() {
                   out
                 </h1>
                 <p className="mt-12 text-lg leading-8 text-slate-300">
-                  La idea del proyecto va aca
+                  Revolutionize your customer experience with our AI chatbot,
+                  offering natural language understanding, personalized
+                  recommendations, and seamless purchasing. Our experts will
+                  elevate your customer interactions.
                 </p>
                 <div className="mt-10 flex items-center justify-left gap-x-6">
                   <a
