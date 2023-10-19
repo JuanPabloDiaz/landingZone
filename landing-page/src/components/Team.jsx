@@ -1,32 +1,36 @@
 // source code: https://www.floatui.com/components/team-sections
+import teamImg1 from "../assets/img/13-team380.png";
+import teamImg2 from "../assets/img/14-team380.png";
+import teamImg3 from "../assets/img/15-team380.png";
+import facebookIcon from "../assets/img/16-face50.png";
+import twitterIcon from "../assets/img/17-twitter50.png";
+import linkedinIcon from "../assets/img/18-linkedin50.png";
 
 export default () => {
   const team = [
     {
-      avatar: require("../assets/img/13-team380.png"),
+      avatar: teamImg1,
       name: "Daniel martin",
       title: "Code Expert",
       linkedin: "https://www.linkedin.com/in/1diazdev/",
       twitter: "https://twitter.com/1diazdev",
-      facebook: "javascript:void(0)",
+      facebook: "https://www.facebook.com/1diazdev",
     },
     {
-      avatar:
-        "https://images.unsplash.com/photo-1579017331263-ef82f0bbc748?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80",
+      avatar: teamImg2,
       name: "Martiana dialan",
       title: "Human Resources",
       linkedin: "https://www.linkedin.com/in/1diazdev/",
       twitter: "https://twitter.com/1diazdev",
-      facebook: "javascript:void(0)",
+      facebook: "https://www.facebook.com/1diazdev",
     },
     {
-      avatar:
-        "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      avatar: teamImg3,
       name: "Vicky tanson",
       title: "Product Manager",
       linkedin: "https://www.linkedin.com/in/1diazdev/",
       twitter: "https://twitter.com/1diazdev",
-      facebook: "javascript:void(0)",
+      facebook: "https://www.facebook.com/1diazdev",
     },
   ];
 
@@ -35,7 +39,7 @@ export default () => {
       <div className="max-w-screen-xl mx-auto px-4 md:px-8">
         <div className="max-auto lg:mx-0 text-center">
           <h2 className="text-4xl tracking-tight text-[#132577] sm:text-2xl">
-            TEAM{" "}
+            TEAM
           </h2>
           <p className="mt-2 text-3xl font-bold leading-8 text-black-600">
             Our certified experts
@@ -66,21 +70,21 @@ export default () => {
                   >
                     <a href={item.twitter} className="">
                       <img
-                        src={require("../assets/img/17-twitter50.png")}
+                        src={twitterIcon}
                         className="w-50 h-50 hover:opacity-30 duration-150"
                         alt=""
                       />
                     </a>
                     <a href={item.facebook} className="">
                       <img
-                        src={require("../assets/img/16-face50.png")}
+                        src={facebookIcon}
                         className="w-50 h-50 hover:opacity-30 duration-150"
                         alt=""
                       />
                     </a>
                     <a href={item.linkedin} className="">
                       <img
-                        src={require("../assets/img/18-linkedin50.png")}
+                        src={linkedinIcon}
                         className="w-50 h-50 hover:opacity-30 duration-150"
                         alt=""
                       />
