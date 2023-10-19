@@ -48,7 +48,7 @@ export default () => {
             <ul className="inline-grid gap-y-8 gap-x-14 grid-cols-2">
               {features.map((item, idx) => (
                 <li key={idx} className="flex gap-x-4">
-                  <div className="flex-none w-64 h-40 rounded-lg flex items-center justify-center">
+                  <div className="flex-none w-64 h-40 rounded-lg flex items-center justify-center hover:shadow-lg hover:border-gray-400 hover:scale-110">
                     {item.image}
                   </div>
                 </li>
@@ -68,7 +68,7 @@ export default () => {
               language understanding, personalized recommendations, and seamless
               purchasing. It's a testament to our commitment to innovation and
               elevating customer interactions."
-            </p>{" "}
+            </p>
             <p className="mt-3 max-w-xl text-justify">
               Our groundbreaking project marked a significant milestone in the
               realm of customer experience enhancement.
