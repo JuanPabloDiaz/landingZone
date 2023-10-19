@@ -48,7 +48,7 @@ export default () => {
             <ul className="inline-grid gap-y-8 gap-x-14 grid-cols-2">
               {features.map((item, idx) => (
                 <li key={idx} className="flex gap-x-4">
-                  <div className="flex-none w-64 h-40 rounded-lg flex items-center justify-center hover:shadow-lg hover:border-gray-400 hover:scale-110">
+                  <div className="flex-none w-64 h-40 rounded-lg flex items-center justify-center hover:shadow-lg hover:border-gray-400 hover:scale-110 hover:duration-150">
                     {item.image}
                   </div>
                 </li>
