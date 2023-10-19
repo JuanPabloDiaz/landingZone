@@ -62,13 +62,16 @@ export default () => {
             <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
               Our amazing project that has been completed
             </h3>
-            <p className="mt-3 max-w-xl">
-              Turpis cursus in hac habitasse platea dictumst quisque sagittis
-              purus. Ligula ullamcorper malesuada proin libero nunc consequat.
+            <p className="mt-3 max-w-xl text-justify">
+              "Our remarkable project leveraged cutting-edge AI chatbot
+              technology to enhance customer experiences, delivering natural
+              language understanding, personalized recommendations, and seamless
+              purchasing. It's a testament to our commitment to innovation and
+              elevating customer interactions."
             </p>{" "}
-            <p className="mt-3 max-w-xl">
-              Dignissim sodales ut eu sem integer vitae justo. Tincidunt tortor
-              aliquam nulla facilisi cras.
+            <p className="mt-3 max-w-xl text-justify">
+              Our groundbreaking project marked a significant milestone in the
+              realm of customer experience enhancement.
             </p>
           </div>
           <div>
