@@ -6,7 +6,39 @@ Buscar un...
 
 - Cookie cuter??
 
-referentes web
+## Project Structure for React App
+
+The idea of this graph is to show how you can structure files by using folders
+
+```text
+├── node_modules (.gitignore)
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   └── manifest.json
+├── src
+│   ├── assets
+│   │   │   ├── images
+│   │   │   └── logo.svg
+│   ├── components
+│   │   ├── Hero.jsx
+│   │   ├── Services.jsx
+│   │   ├── Services-info.jsx
+│   │   ├── About.jsx
+│   │   ├── Testimonials.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Team.jsx
+│   │   ├── Company.jsx
+│   │   └── Footer.jsx
+│   ├── index.css
+│   ├── index.js
+│   └── App.jsx
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── tailwind.config.js
+└── README.md
+```
 
 # Getting Started with Create React App
 
