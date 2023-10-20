@@ -44,10 +44,10 @@ export default () => {
           </p>
         </div>
         <div className="mt-12">
-          <ul className="grid items-center gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="grid items-center gap-6 sm:grid-cols-2 lg:grid-cols-3 group">
             {testimonials.map((item, idx) => (
-              <li key={idx} className="bg-white rounded-xl border shadow-md">
-                <div className="p-4">
+              <li key={idx} className="bg-white rounded-xl border shadow-md ">
+                <div className="p-4 duration-1000 group-hover:scale-75 group-hover:opacity-20">
                   <img
                     src={quoteIcon}
                     className="w-140 h-auto mx-auto mt-6 opacity-60"
@@ -62,7 +62,7 @@ export default () => {
                   </blockquote>
                   <img
                     src={starIcon}
-                    className="w-140 h-auto mx-auto mt-6"
+                    className="w-140 h-auto mx-auto mt-6 duration-1000 group-hover:scale-105 group-hover:opacity-80"
                     alt="5 star rating"
                   />
                   <div className="flex items-center gap-x-4 p-4 mt-6 bg-[#ffc107]/20">

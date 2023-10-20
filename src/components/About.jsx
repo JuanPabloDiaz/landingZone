@@ -21,11 +21,11 @@ export default () => {
             </p>
           </div>
           <div className="mt-6 max-w-lg lg:max-w-none">
-            <ul className="text-black font-semibold list-disc list-inside grid gap-4 grid-cols-2 grid-rows-2 ">
-              <li>Vision and Commitment</li>
-              <li>Expertise and Innovation</li>
-              <li>Customer-Centric Approach</li>
-              <li>Company Culture</li>
+            <ul className="text-black font-semibold list-disc list-inside grid gap-4 grid-cols-2 grid-rows-2">
+              <li className="hover:list-decimal">Vision and Commitment</li>
+              <li className="hover:list-decimal">Expertise and Innovation</li>
+              <li className="hover:list-decimal">Customer-Centric Approach</li>
+              <li className="hover:list-decimal">Company Culture</li>
             </ul>
           </div>
         </div>
