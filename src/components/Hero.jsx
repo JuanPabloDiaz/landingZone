@@ -111,7 +111,7 @@ export default function Example() {
                 </p>
                 <div className="mt-10 flex items-center justify-left gap-x-6">
                   <a
-                    href="./"
+                    href="https://litslink.com/technologies"
                     className="mt-32 rounded-md bg-white hover:bg-[#92989f] px-3.5 py-2.5 text-sm font-semibold text-black hover:text-[#132577] shadow-sm hover:bg-white-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                     EXPLORE MORE
