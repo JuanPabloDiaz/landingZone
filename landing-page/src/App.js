@@ -10,6 +10,10 @@ import Team from "./components/Team";
 import Footer from "./components/Footer";
 import Company from "./components/Company";
 
+// Alert Message from src/components/NotificationText.jsx:
+// import NotificationAlert from "./components/NotificationAlert";
+import Notification from "./util/Notification";
+
 function App() {
   return (
     <div>
@@ -32,6 +36,9 @@ function App() {
       <Projects />
       <Team />
       <Footer />
+
+      {/* <NotificationAlert /> */}
+      <Notification />
     </div>
   );
 }
