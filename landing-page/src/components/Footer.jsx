@@ -6,23 +6,23 @@ export default () => {
       label: "Services",
       items: [
         {
-          href: "javascript:void()",
+          href: "https://www.hostinger.com/web-hosting",
           name: "Web Hosting",
         },
         {
-          href: "javascript:void()",
+          href: "https://porkbun.com/products/domains",
           name: "Domains",
         },
         {
-          href: "javascript:void()",
+          href: "https://www.infinityfree.com/premium/",
           name: "Premium Hosting",
         },
         {
-          href: "javascript:void()",
+          href: "https://www.hostinger.com/vps-hosting",
           name: "Private Server",
         },
         {
-          href: "javascript:void()",
+          href: "https://www.hostinger.com/business-email",
           name: "E-mail Hosting",
         },
       ],
@@ -31,7 +31,7 @@ export default () => {
       label: "Follow Us",
       items: [
         {
-          href: "javascript:void()",
+          href: "https://facebook.com/1diazdev",
           name: "Facebook",
         },
         {
@@ -39,7 +39,7 @@ export default () => {
           name: "Twitter",
         },
         {
-          href: "javascript:void()",
+          href: "https://instagram.com/1diazdev",
           name: "Instagram",
         },
         {
