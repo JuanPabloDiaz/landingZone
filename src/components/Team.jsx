@@ -1,13 +1,23 @@
 // source code: https://www.floatui.com/components/team-sections
 import teamImg1 from "../assets/img/13-team380.png";
 import teamImg2 from "../assets/img/14-team380.png";
-import teamImg3 from "../assets/img/15-team380.png";
+// import teamImg3 from "../assets/img/15-team380.png";
+import teamImg3 from "../assets/img/15-team380.jpg";
 import facebookIcon from "../assets/img/16-face50.png";
 import twitterIcon from "../assets/img/17-twitter50.png";
 import linkedinIcon from "../assets/img/18-linkedin50.png";
 
 export default () => {
   const team = [
+    {
+      avatar: teamImg3,
+      name: "Vicky tanson",
+      title: "Product Manager",
+      linkedin: "https://www.linkedin.com/in/1diazdev/",
+      twitter: "https://twitter.com/1diazdev",
+      facebook: "https://www.facebook.com/1diazdev",
+    },
+
     {
       avatar: teamImg1,
       name: "Daniel martin",
@@ -20,14 +30,6 @@ export default () => {
       avatar: teamImg2,
       name: "Martiana dialan",
       title: "Human Resources",
-      linkedin: "https://www.linkedin.com/in/1diazdev/",
-      twitter: "https://twitter.com/1diazdev",
-      facebook: "https://www.facebook.com/1diazdev",
-    },
-    {
-      avatar: teamImg3,
-      name: "Vicky tanson",
-      title: "Product Manager",
       linkedin: "https://www.linkedin.com/in/1diazdev/",
       twitter: "https://twitter.com/1diazdev",
       facebook: "https://www.facebook.com/1diazdev",
@@ -50,7 +52,7 @@ export default () => {
             {team.map((item, idx) => (
               <li
                 key={idx}
-                className="shadow-md w-full p-2 rounded-xl bg-[#ffc107]/80"
+                className="shadow-md w-full p-2 rounded-xl bg-[#ffc107]/80  hover:shadow-lg hover:shadow-[#132577]"
               >
                 <div className="w-full h-60 sm:h-52 md:h-56">
                   <img
