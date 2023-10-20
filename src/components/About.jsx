@@ -21,19 +21,11 @@ export default () => {
             </p>
           </div>
           <div className="mt-6 max-w-lg lg:max-w-none">
-            <ul className="space-y-4 flex flex-col md:flex-row md:flex-wrap md:space-x-3">
-              <li className="list-disc list-inside text-black font-semibold">
-                Vision and Commitment
-              </li>
-              <li className="list-disc list-inside text-black font-semibold">
-                Expertise and Innovation
-              </li>
-              <li className="list-disc list-inside text-black font-semibold">
-                Customer-Centric Approach
-              </li>
-              <li className="list-disc list-inside text-black font-semibold">
-                Company Culture
-              </li>
+            <ul className="text-black font-semibold list-disc list-inside grid gap-4 grid-cols-2 grid-rows-2 ">
+              <li>Vision and Commitment</li>
+              <li>Expertise and Innovation</li>
+              <li>Customer-Centric Approach</li>
+              <li>Company Culture</li>
             </ul>
           </div>
         </div>
