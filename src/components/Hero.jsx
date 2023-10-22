@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import background from "../assets/img/banner-background1440.png";
+import backgroundImg from "../assets/img/banner-background1440.png";
+import heroImage from "../assets/img/1-hero535.png";
 import { Link } from "react-scroll";
 
 const navigation = [
@@ -20,7 +21,7 @@ export default function Example() {
     <div
       name="home"
       style={{
-        backgroundImage: `url(${background})`,
+        backgroundImage: `url(${backgroundImg})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
@@ -119,8 +120,8 @@ export default function Example() {
               </div>
               <img
                 className="h-auto w-auto max-w-lg object-cover hidden md:flex md:w-96 md:h-96"
-                src={require("../assets/img/1-hero535.png")}
-                alt="img"
+                src={heroImage}
+                alt="background image for hero"
               />
             </div>
           </div>
