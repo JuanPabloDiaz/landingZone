@@ -42,10 +42,10 @@ const posts = [
 
 export default function Example() {
   return (
-    <div name="services" className="pt-24 pb-6 sm:pt-32 sm:pb-6">
+    <div name="services" className="pt-24 pb-6 md:pt-32 sm:pb-6">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
-        <div className="mx-auto lg:mx-0 text-center bg-slate-900">
-          <h2 className="text-4xl tracking-tight text-[#132577] sm:text-2xl bg-amber-800">
+        <div className="mx-auto lg:mx-0 text-center">
+          <h2 className="text-4xl tracking-tight text-[#132577] sm:text-2xl">
             SERVICES
           </h2>
           <p className="mt-2 text-3xl font-bold leading-8 text-black-600">
@@ -55,7 +55,7 @@ export default function Example() {
             For Every IT Job
           </p>
         </div>
-        <div className="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+        <div className="mx-auto mt-4 grid max-w-2xl grid-cols-2 gap-4 lg:gap-8 border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
           {posts.map((post) => (
             <article
               key={post.id}
