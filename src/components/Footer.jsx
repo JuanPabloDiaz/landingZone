@@ -64,25 +64,27 @@ export default () => {
       name="footer"
       className="text-white bg-[#132577] px-4 py-5 max-w-full mx-auto md:px-8"
     >
-      <div className="gap-6 flex justify-between">
-        <div className="flex-1 bg-slate-500">
-          <div className="max-w-xs bg-orange-300">
-            <p className="leading-relaxed mt-2 text-[15px] pt-20">
+      <div className="gap-6 md:flex justify-between">
+        <div className="flex-none md:flex-1">
+          <div className="md:max-w-xs">
+            <p className="mt-2 text-md md:text-lg md:pt-20">
               Digital experience is always embedded in a physical experience.
             </p>
           </div>
         </div>
-        <div className="flex flex-1 space-y-6 justify-between md:space-y-0 bg-slate-600">
+        <div className="md:flex flex-none md:flex-1 space-y-6 justify-between md:space-y-0 ">
           {footerNavs.map((item, idx) => (
-            <ul className="md:space-y-4 space-y-2 bg-slate-200" key={idx}>
-              <h4 className="text-[#92989F] font-bold text-xl">{item.label}</h4>
-              {item.items.map((el, idx) => (
+            <ul className="md:space-y-4 space-y-2" key={idx}>
+              <h4 className="text-[#92989F] font-bold text-lg md:text-xl">
+                {item.label}
+              </h4>
+              {item.items.map((footerElement, idx) => (
                 <li key={idx}>
                   <a
-                    href={el.href}
+                    href={footerElement.href}
                     className="hover:underline hover:text-[#ffc107]"
                   >
-                    {el.name}
+                    {footerElement.name}
                   </a>
                 </li>
               ))}
@@ -90,7 +92,7 @@ export default () => {
           ))}
         </div>
       </div>
-      <div className="mt-4 py-2 flex justify-between items-center text-gray-500 text-xs bg-black">
+      <div className="mt-4 py-2 flex justify-between items-center text-gray-500 text-xs">
         <div className="mt-4 sm:mt-0">
           &copy; Design with love © Hardik Ramani 2023. All right reserved
         </div>
