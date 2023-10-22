@@ -62,7 +62,7 @@ export default () => {
   return (
     <footer
       name="footer"
-      className="text-white bg-[#132577] px-4 py-5 max-w-full mx-auto md:px-8"
+      className="text-white bg-[#132577] px-4 py-5 max-w-full mx-auto md:px-12 lg:px-20"
     >
       <div className="gap-6 md:flex justify-between">
         <div className="flex-none md:flex-1">
@@ -72,7 +72,7 @@ export default () => {
             </p>
           </div>
         </div>
-        <div className="md:flex flex-none md:flex-1 space-y-6 justify-between md:space-y-0 ">
+        <div className="flex md:flex-1 justify-between">
           {footerNavs.map((item, idx) => (
             <ul className="md:space-y-4 space-y-2" key={idx}>
               <h4 className="text-[#92989F] font-bold text-lg md:text-xl">
