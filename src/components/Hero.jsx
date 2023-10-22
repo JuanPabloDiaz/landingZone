@@ -32,7 +32,7 @@ export default function Example() {
           aria-label="Global"
         >
           {/* Hamburger menu icon: */}
-          <div className="flex lg:hidden ">
+          <div className="flex lg:hidden fixed bg-[#132577] p-3 rounded-full">
             <button
               type="button"
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white hover:text-gray-400"
