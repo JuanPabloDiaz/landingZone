@@ -55,7 +55,7 @@ export default function Example() {
             For Every IT Job
           </p>
         </div>
-        <div className="mx-auto mt-4 grid max-w-2xl grid-cols-2 gap-4 lg:gap-8 border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+        <div className="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-4 lg:gap-8 border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
           {posts.map((post) => (
             <article
               key={post.id}
