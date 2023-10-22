@@ -55,11 +55,11 @@ export default function Example() {
             For Every IT Job
           </p>
         </div>
-        <div className="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-4 lg:gap-8 border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+        <div className="mx-auto mt-4 grid max-w-8xl grid-cols-1 gap-4 lg:gap-8 pt-5 border-gray-200 md:pt-10 lg:mx-0 lg:max-w-none lg:grid-cols-4">
           {posts.map((post) => (
             <article
               key={post.id}
-              className="flex max-w-xl flex-col items-start justify-between border-spacing-x-28 rounded-lg shadow-xl hover:shadow-2xl box-border p-4 sm:p-6 lg:p-8 bg-[#ffc107] hover:bg-[#ffbd07]"
+              className="flex max-w-4xl flex-col items-start justify-between border-spacing-x-28 rounded-lg shadow-xl hover:shadow-2xl box-border p-4 md:p-6 lg:p-8 bg-[#ffc107] hover:bg-[#ffbd07]"
             >
               <div className="group relative p-2">
                 <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
