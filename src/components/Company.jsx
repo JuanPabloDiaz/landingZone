@@ -44,7 +44,7 @@ const OpenCards = () => {
         {[0, 1, 2, 3].map((index) => (
           <motion.div
             key={index}
-            className={`card cursor-pointer h-[500px] bg-cover bg-center rounded-[20px] ${
+            className={`card cursor-pointer h-[300px] md:h-[500px] bg-cover bg-center rounded-[20px] ${
               index === expandedIndex ? "expanded" : ""
             }`}
             variants={cardVariants}

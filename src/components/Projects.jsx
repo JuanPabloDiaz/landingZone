@@ -1,6 +1,10 @@
 // alertSuccess: https://www.floatui.com/components/alerts & tutorial from https://www.youtube.com/watch?v=7L7MhxjI4PE
 import { useContext } from "react";
 import NotificationContext from "../context/NotificationContext";
+import projectImg1 from "../assets/img/9-project295.png";
+import projectImg2 from "../assets/img/10-project295.png";
+import projectImg3 from "../assets/img/11-project295.png";
+import projectImg4 from "../assets/img/12-project295.png";
 
 // https://www.floatui.com/components/stats
 export default () => {
@@ -56,37 +60,25 @@ export default () => {
   const features = [
     {
       image: (
-        <img
-          src={require("../assets/img/9-project295.png")}
-          className="rounded-lg"
-          alt=""
-        />
+        <img src={projectImg1} className="rounded-lg" alt="phone project" />
+      ),
+    },
+    {
+      image: (
+        <img src={projectImg2} className="rounded-lg" alt="dashboard project" />
+      ),
+    },
+    {
+      image: (
+        <img src={projectImg3} className="rounded-lg" alt="banking project" />
       ),
     },
     {
       image: (
         <img
-          src={require("../assets/img/10-project295.png")}
+          src={projectImg4}
           className="rounded-lg"
-          alt=""
-        />
-      ),
-    },
-    {
-      image: (
-        <img
-          src={require("../assets/img/11-project295.png")}
-          className="rounded-lg"
-          alt=""
-        />
-      ),
-    },
-    {
-      image: (
-        <img
-          src={require("../assets/img/12-project295.png")}
-          className="rounded-lg"
-          alt=""
+          alt="white dashboard project"
         />
       ),
     },
