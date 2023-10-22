@@ -1,3 +1,5 @@
+import aboutImg from "../assets/img/2-aboutUs582.png";
+
 export default () => {
   return (
     <section name="about" className="py-14">
@@ -31,7 +33,7 @@ export default () => {
         </div>
         <div className="mt-12 lg:mt-0">
           <img
-            src={require("../assets/img/2-aboutUs582.png")}
+            src={aboutImg}
             alt="about us"
             className="max-w-xl w-[400px] lg:w-[600px] hidden md:flex"
           />
