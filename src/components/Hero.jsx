@@ -95,7 +95,6 @@ export default function Example() {
 
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div className="mx-auto max-w-8xl py-32 sm:py-48 lg:py-56">
-          {" "}
           <div>
             <div className="flex justify-around ">
               <div className="text-left max-w-3xl">
