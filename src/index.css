@@ -11,3 +11,9 @@
   --white: #ffffff;
   --black: #000000;
 }
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
