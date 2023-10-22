@@ -121,7 +121,7 @@ export default () => {
           <div>
             <button
               onClick={NotificacionHandler}
-              className="px-7 py-4 text-white duration-150 bg-[#132577] rounded-lg hover:bg-[#13257798] active:shadow-lg mt-32"
+              className="px-7 py-4 text-white duration-150 bg-[#132577] rounded-lg hover:bg-[#13257798] active:shadow-lg mt-12 md:mt-20"
             >
               Recent Projects
             </button>
