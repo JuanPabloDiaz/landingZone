@@ -62,17 +62,17 @@ export default () => {
   return (
     <footer
       name="footer"
-      className="text-white bg-[#132577] px-40 py-5 max-w-screen-2xl mx-auto md:px-8"
+      className="text-white bg-[#132577] px-40 py-5 max-w-full mx-auto md:px-8"
     >
-      <div className="gap-6 justify-between md:flex">
-        <div className="flex-1">
-          <div className="max-w-xs">
+      <div className="gap-6 justify-between flex">
+        <div className="flex-1 bg-slate-500">
+          <div className="md:max-w-xs bg-orange-300">
             <p className="leading-relaxed mt-2 text-[15px] pt-20">
               Digital experience is always embedded in a physical experience.
             </p>
           </div>
         </div>
-        <div className="flex-1 mt-10 space-y-6 justify-between sm:flex md:space-y-0 md:mt-0">
+        <div className="flex flex-1 mt-10 space-y-6 justify-between md:space-y-0 md:mt-0 bg-slate-600">
           {footerNavs.map((item, idx) => (
             <ul className="space-y-4" key={idx}>
               <h4 className="text-[#92989F] font-bold text-xl">{item.label}</h4>
