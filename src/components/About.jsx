@@ -3,7 +3,7 @@ export default () => {
     <section name="about" className="py-14">
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 gap-16 justify-between md:px-8 lg:flex">
         <div>
-          <div className="max-w-xl space-y-3">
+          <div className="max-w-6xl md:max-w-8xl space-y-3">
             <h3 className="text-[#132577] font-semibold text-xl">
               FEW WORDS ABOUT US
             </h3>
@@ -20,8 +20,8 @@ export default () => {
               technology meets expertise – welcome to our world."
             </p>
           </div>
-          <div className="mt-6 max-w-lg lg:max-w-none">
-            <ul className="text-black font-semibold list-disc list-inside grid gap-4 grid-cols-2 grid-rows-2">
+          <div className="mt-6 max-w-lg md:max-w-4xl lg:max-w-none">
+            <ul className="text-black font-semibold list-disc list-inside grid gap-4 grid-cols-2 grid-rows-2 md:grid-cols-4">
               <li className="hover:list-decimal">Vision and Commitment</li>
               <li className="hover:list-decimal">Expertise and Innovation</li>
               <li className="hover:list-decimal">Customer-Centric Approach</li>
@@ -33,7 +33,7 @@ export default () => {
           <img
             src={require("../assets/img/2-aboutUs582.png")}
             alt="about us"
-            className="max-w-xl hidden md:flex "
+            className="max-w-xl w-[400px] lg:w-[600px] hidden md:flex"
           />
         </div>
       </div>
