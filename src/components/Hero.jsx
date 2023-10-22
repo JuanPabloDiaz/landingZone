@@ -43,7 +43,7 @@ export default function Example() {
             </button>
           </div>
           {/* Desktop Navigation: */}
-          <div className="hidden lg:flex lg:gap-x-12 lg:justify-end">
+          <div className="hidden lg:flex lg:gap-x-12 lg:justify-end fixed bg-[#132577]/80 rounded-lg p-2">
             {navigation.map((item) => (
               <Link
                 to={item.section}
