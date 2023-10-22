@@ -43,7 +43,7 @@ const posts = [
 export default function Example() {
   return (
     <div name="services" className="pt-24 pb-6 sm:pt-32 sm:pb-6">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 bg-slate-500">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
         <div className="mx-auto lg:mx-0 text-center bg-slate-900">
           <h2 className="text-4xl tracking-tight text-[#132577] sm:text-2xl bg-amber-800">
             SERVICES
@@ -55,11 +55,11 @@ export default function Example() {
             For Every IT Job
           </p>
         </div>
-        <div className="mx-auto mt-10 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+        <div className="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
           {posts.map((post) => (
             <article
               key={post.id}
-              className="flex max-w-xl flex-col items-start justify-between border-spacing-x-28 rounded-lg  shadow-xl hover:shadow-2xl box-border p-4 sm:p-6 lg:p-8 bg-[#ffc107] hover:bg-[#ffbd07]"
+              className="flex max-w-xl flex-col items-start justify-between border-spacing-x-28 rounded-lg shadow-xl hover:shadow-2xl box-border p-4 sm:p-6 lg:p-8 bg-[#ffc107] hover:bg-[#ffbd07]"
             >
               <div className="group relative p-2">
                 <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
