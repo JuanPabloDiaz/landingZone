@@ -41,7 +41,7 @@ export default function Hero() {
           scrollPosition > 0
             ? "lg:shadow lg:bg-[#132577] lg:-translate-y-6 lg:h-auto"
             : "lg:shadow-none bg-none lg:translate-y-0 lg:h-none",
-          "absolute lg:fixed top-0 inset-x-0 z-40 lg:transition-shadow-xl lg:transition-color duration-500 lg:-translate-y-6 lg:h-24"
+          "absolute lg:fixed top-0 inset-x-0 z-40 lg:transition-shadow-xl lg:shadow-black lg:transition-color duration-500 lg:-translate-y-6 lg:h-24"
         )}
       >
         <nav
