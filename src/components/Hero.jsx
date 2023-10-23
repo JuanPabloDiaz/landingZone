@@ -26,7 +26,7 @@ export default function Example() {
         backgroundSize: "cover",
       }}
     >
-      <header className="absolute inset-x-0 top-0 z-50">
+      <header className="absolute inset-x-0 lg:fixed top-0 z-40 lg:bg-[#132577]/60 lg:shadow">
         <nav
           className="flex items-center justify-end p-12 lg:px-20"
           aria-label="Global"
@@ -43,7 +43,7 @@ export default function Example() {
             </button>
           </div>
           {/* Desktop Navigation: */}
-          <div className="hidden lg:flex lg:gap-x-12 lg:justify-end fixed bg-[#132577]/80 rounded-lg p-2">
+          <div className="hidden lg:flex lg:gap-x-12 lg:justify-end">
             {navigation.map((item) => (
               <Link
                 to={item.section}
