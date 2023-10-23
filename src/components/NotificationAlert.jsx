@@ -6,8 +6,8 @@ function Component1() {
 
   // Source code from alertSuccess: https://www.floatui.com/components/alerts
   const alertSuccess = (
-    <div className="mt-12 mx-4 px-4 rounded-md border-l-4 border-green-500 bg-green-50 md:max-w-2xl md:mx-auto md:px-8">
-      <div className="flex justify-between py-3">
+    <div className="mt-12 mx-4 px-4 rounded-md border-l-4 border-green-500 bg-green-50 md:max-w-2xl md:mx-auto md:px-8 z-20">
+      <div className="flex justify-between py-3 z-40">
         <div className="flex">
           <div>
             <svg
