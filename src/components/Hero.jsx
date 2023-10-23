@@ -4,6 +4,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import backgroundImg from "../assets/img/banner-background1440.png";
 import heroImage from "../assets/img/1-hero535.png";
 import { Link } from "react-scroll";
+import { useScrollPosition } from "../hooks";
 
 const navigation = [
   { name: "Home", section: "home" },
@@ -14,8 +15,16 @@ const navigation = [
   { name: "Services", section: "services" },
   { name: "Contact Us", section: "footer" },
 ];
-export default function Example() {
+
+function classNamesNavBarScroll(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
+
+export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const scrollPosition = useScrollPosition();
+  console.log(scrollPosition);
 
   return (
     <div
@@ -26,7 +35,15 @@ export default function Example() {
         backgroundSize: "cover",
       }}
     >
-      <header className="absolute inset-x-0 lg:fixed top-0 z-40 lg:bg-[#132577]/60 lg:shadow">
+      {/* <header className=" lg:shadow"> */}
+      <header
+        className={classNamesNavBarScroll(
+          scrollPosition > 0
+            ? "lg:shadow bg-[#132577]/60"
+            : "lg:shadow-none bg-none",
+          "absolute lg:fixed top-0 inset-x-0 z-40 lg:transition-shadow lg:transition-background-color duration-1000 transition-[height] lg:ease-out"
+        )}
+      >
         <nav
           className="flex items-center justify-end p-12 lg:px-20"
           aria-label="Global"
