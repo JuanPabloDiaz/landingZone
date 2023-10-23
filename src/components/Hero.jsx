@@ -35,7 +35,7 @@ export default function Hero() {
         backgroundSize: "cover",
       }}
     >
-      {/* <header className=" lg:shadow"> */}
+      {/* Tutorial To Change NavBar On Scroll https://www.youtube.com/watch?v=UvWMlNZuQTc&t=237s */}
       <header
         className={classNamesNavBarScroll(
           scrollPosition > 0
@@ -49,7 +49,12 @@ export default function Hero() {
           aria-label="Global"
         >
           {/* Hamburger menu icon: */}
-          <div className="flex lg:hidden fixed bg-[#132577] p-3 rounded-full">
+          <div
+            className={classNamesNavBarScroll(
+              scrollPosition > 0 ? "bg-[#132577]" : "bg-none",
+              "flex lg:hidden fixed p-2 rounded-full transition-color duration-1000"
+            )}
+          >
             <button
               type="button"
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white hover:text-gray-400"
