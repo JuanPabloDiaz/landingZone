@@ -49,10 +49,11 @@ export default function Hero() {
           aria-label="Global"
         >
           {/* Hamburger menu icon: */}
+          {/* Set to hidden since its not functional yet. it taking the entire screen and wont close after click. (To show change hidden to flex in small screens)  */}
           <div
             className={classNamesNavBarScroll(
               scrollPosition > 0 ? "bg-[#132577]" : "bg-none",
-              "flex lg:hidden fixed p-2 rounded-full transition-color duration-1000"
+              "hidden lg:hidden fixed p-2 rounded-full transition-color duration-1000"
             )}
           >
             <button
