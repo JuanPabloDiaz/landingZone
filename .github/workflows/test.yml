@@ -2,7 +2,7 @@ name: Test
 run-name: ¡Estoy aprendiendo GitHub Actions!
 on: [push]
 jobs:
-  hola-mundo:
+  first-github-actions:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
