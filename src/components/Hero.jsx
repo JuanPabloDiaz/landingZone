@@ -40,17 +40,17 @@ export default function Hero() {
       <header
         className={classNamesNavBarScroll(
           scrollPosition > 0
-            ? "lg:shadow lg:bg-[#132577] lg:-translate-y-6 lg:h-auto"
-            : "lg:shadow-none bg-none lg:translate-y-0 lg:h-none",
-          "absolute lg:fixed top-0 inset-x-0 z-40 lg:transition-shadow-xl lg:shadow-black lg:transition-color duration-500 lg:-translate-y-6 lg:h-24"
+            ? "md:shadow md:bg-[#132577] md:-translate-y-6 md:h-auto"
+            : "md:shadow-none md:bg-none md:translate-y-0 md:h-none",
+          "absolute md:fixed top-0 inset-x-0 z-40 md:transition-shadow-xl md:shadow-black md:transition-color duration-500 md:-translate-y-6 md:h-20 lg:h-24"
         )}
       >
         <nav
-          className="flex items-center justify-end p-12 lg:px-20"
+          className="flex items-center justify-end p-12 md:px-10 lg:px-20"
           aria-label="Global"
         >
           {/* Hamburger menu icon: */}
-          {/* Set to hidden since its not functional yet. it taking the entire screen and wont close after click. (To show change hidden to flex in small screens)  */}
+          {/* Set to hidden since its not functional yet. it taking the entire screen and wont close after click. (To show change hidden to flex in small screens. Also need to change the md to lg on the classNamesNavBarScroll ^^ */}
           <div
             className={classNamesNavBarScroll(
               scrollPosition > 0 ? "bg-[#132577]" : "bg-none",
@@ -66,8 +66,8 @@ export default function Hero() {
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          {/* Desktop Navigation: */}
-          <div className="hidden lg:flex lg:gap-x-12 lg:justify-end">
+          {/* Table & Desktop Navigation: */}
+          <div className="hidden md:flex md:gap-x-8 lg:gap-x-12 md:justify-end">
             {navigation.map((item) => (
               <Link
                 to={item.section}
