@@ -22,3 +22,6 @@ jobs:
       - name: Show log file
         run: cat test.log
       - uses: masaditya/test-autograde@v10.0
+
+    # THIS IS THE OLD VERSION AND GENERATE AN ERROR
+    # DONT USE IT!
