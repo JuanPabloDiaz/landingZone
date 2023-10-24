@@ -9,11 +9,11 @@ import { useScrollPosition } from "../hooks";
 const navigation = [
   { name: "Home", section: "home" },
   { name: "Services", section: "services" },
-  { name: "About Us", section: "about" },
+  { name: "About", section: "about" },
   { name: "Clients", section: "testimonials" },
   { name: "Portfolio", section: "projects" },
   { name: "Expertise", section: "team" },
-  { name: "Contact Us", section: "footer" },
+  // { name: "Contact", section: "footer" },
 ];
 
 function classNamesNavBarScroll(...classes) {
