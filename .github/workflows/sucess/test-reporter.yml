@@ -22,3 +22,12 @@ jobs:
           name: JEST Tests # Name of the check run which will be created
           path: reports/jest-*.xml # Path to test results
           reporter: jest-junit # Format of test results
+
+
+          # Errors...
+# Build & Test
+# No test report files were found
+# Build & Test
+# Process completed with exit code 1.
+# Build & Test
+# No file matches path reports/jest-*.xml
