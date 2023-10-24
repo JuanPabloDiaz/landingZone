@@ -28,6 +28,7 @@ export default function Hero() {
 
   return (
     <div
+      className="md:h-screen"
       name="home"
       style={{
         backgroundImage: `url(${backgroundImg})`,
@@ -145,7 +146,7 @@ export default function Hero() {
               <img
                 className="h-auto w-auto max-w-lg object-cover hidden md:flex md:w-96 md:h-96"
                 src={heroImage}
-                alt="background image for hero"
+                alt="Hero image for hero"
               />
             </div>
           </div>
