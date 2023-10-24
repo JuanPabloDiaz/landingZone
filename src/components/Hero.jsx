@@ -1,5 +1,4 @@
 import {} from "react";
-import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import backgroundImg from "../assets/img/banner-background1440.png";
 import heroImage from "../assets/img/1-hero535.png";
