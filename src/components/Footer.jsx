@@ -94,7 +94,7 @@ export default () => {
       </div>
       <div className="mt-4 py-2 flex justify-between items-center text-gray-500 text-xs">
         <div className="mt-4 sm:mt-0">
-          &copy; Design with love © Hardik Ramani 2023. All right reserved
+          &copy; Design with love © Juan Diaz 2023. All right reserved
         </div>
         <div className="mt-4 sm:mt-0">Claim Privacy Terms</div>
       </div>
