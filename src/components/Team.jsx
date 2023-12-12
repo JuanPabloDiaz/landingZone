@@ -66,10 +66,7 @@ export default () => {
                     {item.name}
                   </h4>
                   <p className="">{item.title}</p>
-                  <div
-                    className="mt-3 flex gap-4 text-[#132577] justify-center pt-10 pb-5"
-                    border-10
-                  >
+                  <div className="mt-3 flex gap-4 text-[#132577] justify-center pt-10 pb-5 border-10">
                     <a href={item.twitter} className="">
                       <img
                         src={twitterIcon}
