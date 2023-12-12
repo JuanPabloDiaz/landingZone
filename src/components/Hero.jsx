@@ -16,7 +16,6 @@ const navigation = [
   { name: "Expertise", section: "team" },
   // { name: "Contact", section: "footer" },
 ];
-
 function classNamesNavBarScroll(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -73,6 +72,7 @@ export default function Hero() {
               <Link
                 to={item.section}
                 smooth={true}
+                key={item.name}
                 duration={500}
                 className="text-sm font-semibold leading-6 text-white hover:underline hover:text-gray-400 cursor-pointer"
               >
@@ -107,6 +107,7 @@ export default function Hero() {
                     <Link
                       to={item.section}
                       smooth={true}
+                      key={item.name}
                       duration={500}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50 hover:text-zinc-900 cursor-pointer"
                     >
