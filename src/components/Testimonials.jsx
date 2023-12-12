@@ -33,7 +33,10 @@ export default () => {
   ];
 
   return (
-    <section name="testimonials" className="relative py-14">
+    <section
+      name="testimonials"
+      className="relative pt-24 pb-6 md:pt-32 sm:pb-6"
+    >
       <div className="relative max-w-screen-xl mx-auto px-4 md:px-8">
         <div className="max-w-xl sm:text-center md:mx-auto">
           <h2 className="text-4xl tracking-tight text-[#132577] sm:text-2xl">

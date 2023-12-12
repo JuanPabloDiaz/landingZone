@@ -37,7 +37,7 @@ export default () => {
   ];
 
   return (
-    <section name="team" className="py-14">
+    <section name="team" className="pt-24 pb-6 md:pt-32 sm:pb-6">
       <div className="max-w-screen-xl mx-auto px-4 md:px-8">
         <div className="max-auto lg:mx-0 text-center">
           <h2 className="text-4xl tracking-tight text-[#132577] sm:text-2xl">

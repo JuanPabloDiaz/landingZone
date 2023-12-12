@@ -31,7 +31,7 @@ const OpenCards = () => {
     "Our customers are ambitious businesses and entrepreneurs, and we're here to empower their success with innovative software solutions.",
   ];
   return (
-    <section name="company" className="py-16 pb-16">
+    <section name="company" className="pt-24 pb-6 md:pt-32 sm:pb-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-4xl tracking-tight text-[#132577] sm:text-2xl">
           WE LOVE OUR WORK
