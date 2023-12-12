@@ -147,7 +147,7 @@ export default function Hero() {
               <img
                 className="h-auto w-auto max-w-lg object-cover hidden md:flex md:w-96 md:h-96"
                 src={heroImage}
-                alt="Hero image for hero"
+                alt="Graphic"
               />
             </div>
           </div>
