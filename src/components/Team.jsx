@@ -7,7 +7,7 @@ import facebookIcon from "../assets/img/16-face50.png";
 import twitterIcon from "../assets/img/17-twitter50.png";
 import linkedinIcon from "../assets/img/18-linkedin50.png";
 
-export default () => {
+const Team = () => {
   const team = [
     {
       avatar: teamImg3,
@@ -98,3 +98,5 @@ export default () => {
     </section>
   );
 };
+
+export default Team;

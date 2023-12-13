@@ -5,7 +5,7 @@ import projectImg2 from "../assets/img/10-project295.png";
 import projectImg3 from "../assets/img/11-project295.png";
 import projectImg4 from "../assets/img/12-project295.png";
 
-export default () => {
+const Projects = () => {
   const features = [
     {
       image: (
@@ -77,3 +77,5 @@ export default () => {
     </section>
   );
 };
+
+export default Projects;

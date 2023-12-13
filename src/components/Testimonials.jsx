@@ -7,7 +7,7 @@ import person1 from "../assets/img/6-testimon120.png";
 import person2 from "../assets/img/7-testimon120.png";
 import person3 from "../assets/img/8-testimon120.png";
 
-export default () => {
+const Testimonials = () => {
   const testimonials = [
     {
       avatar: person1,
@@ -92,3 +92,5 @@ export default () => {
     </section>
   );
 };
+
+export default Testimonials;

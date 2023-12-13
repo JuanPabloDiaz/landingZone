@@ -1,6 +1,6 @@
 // Source: https://www.floatui.com/components/footers
 
-export default () => {
+const Footer = () => {
   const footerNavs = [
     {
       label: "Services",
@@ -101,3 +101,5 @@ export default () => {
     </footer>
   );
 };
+
+export default Footer;
