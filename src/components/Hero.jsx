@@ -40,9 +40,9 @@ export default function Hero() {
       <header
         className={classNamesNavBarScroll(
           scrollPosition > 0
-            ? "md:shadow md:bg-[#132577] md:-translate-y-6 md:h-auto"
-            : "md:shadow-none md:bg-none md:translate-y-0 md:h-none",
-          "absolute md:fixed top-0 inset-x-0 z-40 md:transition-shadow-xl md:shadow-black md:transition-color duration-500 md:-translate-y-6 md:h-20 lg:h-24"
+            ? "md:h-auto md:-translate-y-6 md:bg-[#132577] md:shadow"
+            : "md:h-none md:translate-y-0 md:bg-none md:shadow-none",
+          "md:transition-shadow-xl md:transition-color absolute inset-x-0 top-0 z-40 duration-500 md:fixed md:h-20 md:-translate-y-6 md:shadow-black lg:h-24",
         )}
       >
         <nav
@@ -54,7 +54,7 @@ export default function Hero() {
           <div
             className={classNamesNavBarScroll(
               scrollPosition > 0 ? "bg-[#132577]" : "bg-none",
-              "hidden lg:hidden fixed p-2 rounded-full transition-color duration-1000"
+              "transition-color fixed hidden rounded-full p-2 duration-1000 lg:hidden",
             )}
           >
             <button
@@ -67,14 +67,14 @@ export default function Hero() {
             </button>
           </div>
           {/* Table & Desktop Navigation: */}
-          <div className="hidden md:flex md:gap-x-8 lg:gap-x-12 md:justify-end">
+          <div className="hidden md:flex md:justify-end md:gap-x-8 lg:gap-x-12">
             {navigation.map((item) => (
               <Link
                 to={item.section}
                 smooth={true}
                 key={item.name}
                 duration={500}
-                className="text-sm font-semibold leading-6 text-white hover:underline hover:text-gray-400 cursor-pointer"
+                className="cursor-pointer text-sm font-semibold leading-6 text-white hover:text-gray-400 hover:underline"
               >
                 {item.name}
               </Link>
@@ -109,7 +109,7 @@ export default function Hero() {
                       smooth={true}
                       key={item.name}
                       duration={500}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50 hover:text-zinc-900 cursor-pointer"
+                      className="-mx-3 block cursor-pointer rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50 hover:text-zinc-900"
                     >
                       {item.name}
                     </Link>
@@ -122,10 +122,10 @@ export default function Hero() {
       </header>
 
       <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div className="mx-auto max-w-8xl py-32 sm:py-48 lg:py-56">
+        <div className="max-w-8xl mx-auto py-32 sm:py-48 lg:py-56">
           <div>
             <div className="flex justify-around ">
-              <div className="text-left max-w-3xl">
+              <div className="max-w-3xl text-left">
                 <h1 className="text-3xl font-bold tracking-tight text-slate-100 sm:text-5xl">
                   Software solution providers that help brands thrive and stand
                   out
@@ -136,17 +136,17 @@ export default function Hero() {
                   recommendations, and seamless purchasing. Our experts will
                   elevate your customer interactions.
                 </p>
-                <div className="mt-10 flex items-center justify-left gap-x-6">
+                <div className="justify-left mt-10 flex items-center gap-x-6">
                   <a
                     href="https://litslink.com/technologies"
-                    className="mt-32 rounded-md bg-white hover:bg-[#92989f] px-3.5 py-2.5 text-sm font-semibold text-black hover:text-[#132577] shadow-sm hover:bg-white-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    className="hover:bg-white-500 mt-32 rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#92989f] hover:text-[#132577] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                     EXPLORE MORE
                   </a>
                 </div>
               </div>
               <img
-                className="h-auto w-auto max-w-lg object-cover hidden md:flex md:w-96 md:h-96"
+                className="hidden h-auto w-auto max-w-lg object-cover md:flex md:h-96 md:w-96"
                 src={heroImage}
                 alt="Graphic"
               />

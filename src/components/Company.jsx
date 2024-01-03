@@ -31,20 +31,20 @@ const OpenCards = () => {
     "Our customers are ambitious businesses and entrepreneurs, and we're here to empower their success with innovative software solutions.",
   ];
   return (
-    <section name="company" className="pt-24 pb-6 md:pt-32 sm:pb-6">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section name="company" className="pb-6 pt-24 sm:pb-6 md:pt-32">
+      <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
         <h2 className="text-4xl tracking-tight text-[#132577] sm:text-2xl">
           WE LOVE OUR WORK
         </h2>
-        <p className="mt-2 text-3xl font-bold leading-8 text-black-600">
+        <p className="text-black-600 mt-2 text-3xl font-bold leading-8">
           FIND OUT MORE
         </p>
       </div>
-      <div className="mt-12 flex flex-col md:flex-row justify-center items-center gap-5">
+      <div className="mt-12 flex flex-col items-center justify-center gap-5 md:flex-row">
         {[0, 1, 2, 3].map((index) => (
           <motion.div
             key={index}
-            className={`card cursor-pointer h-[300px] md:h-[500px] bg-cover bg-center rounded-[20px] ${
+            className={`card h-[300px] cursor-pointer rounded-[20px] bg-cover bg-center md:h-[500px] ${
               index === expandedIndex ? "expanded" : ""
             }`}
             variants={cardVariants}
@@ -56,13 +56,13 @@ const OpenCards = () => {
               backgroundImage: `url(${cardImages[index]})`,
             }}
           >
-            <div className="card-content h-full flex flex-col justify-end">
-              <div className="card-footer rounded-b-[20px] bg-[#132577] bg-opacity-75 min-h-[100px] flex flex-col items-center justify-center">
+            <div className="card-content flex h-full flex-col justify-end">
+              <div className="card-footer flex min-h-[100px] flex-col items-center justify-center rounded-b-[20px] bg-[#132577] bg-opacity-75">
                 <h2 className="text-xl font-bold text-white">
                   {cardTitle[index]}
                 </h2>
                 {index === expandedIndex && (
-                  <p className="text-white text-center">
+                  <p className="text-center text-white">
                     {cardDescriptions[index]}
                   </p>
                 )}
