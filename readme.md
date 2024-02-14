@@ -110,6 +110,11 @@ In the project directory, you can run:
 
 I welcome contributions to the [Brother Landing Page](https://brother.jpdiaz.dev)! Feel free to fork the repository and submit pull requests with your improvements.
 
+### Contributors
+
+<a href="https://github.com/JuanPabloDiaz/brothers-landingPage/graphs/contributors"><img src="https://contrib.rocks/image?repo=JuanPabloDiaz/brothers-landingPage" /></a><!-- Made with [contrib.rocks](https://contrib.rocks). -->
+
+
 ## License 📜
 
 [Brother Landing Page](https://brother.jpdiaz.dev) is licensed under the MIT License.
