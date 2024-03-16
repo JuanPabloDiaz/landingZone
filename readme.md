@@ -62,6 +62,10 @@ The idea of this graph is to show how you can structure files by using folders
 
 <img src="./src/assets/img/preview/phone.png" width="250" />
 
+### Lighthouse Score 🚀
+
+<img src="./src/assets/img/preview/lighthouse.png" />
+
 ## Features:
 
 - Responsive design: this project adapts to any screen size, ensuring a consistent and enjoyable experience for all users.
