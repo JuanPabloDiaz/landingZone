@@ -62,6 +62,10 @@ The idea of this graph is to show how you can structure files by using folders
 
 <img src="./src/assets/img/preview/phone.png" width="250" />
 
+### Lighthouse Score 🚀
+
+<img src="./src/assets/img/preview/lighthouse.png" />
+
 ## Features:
 
 - Responsive design: this project adapts to any screen size, ensuring a consistent and enjoyable experience for all users.
@@ -109,6 +113,11 @@ In the project directory, you can run:
 ## Contribution 🤝
 
 All contributions are welcome. Please read the [CONTRIBUTING guidelines](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
+
+### Contributors
+
+<a href="https://github.com/JuanPabloDiaz/brothers-landingPage/graphs/contributors"><img src="https://contrib.rocks/image?repo=JuanPabloDiaz/brothers-landingPage" /></a><!-- Made with [contrib.rocks](https://contrib.rocks). -->
+
 
 ## License 📜
 
