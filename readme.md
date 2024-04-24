@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-# Landing Page
+# Landing Zone 🚀
 
 This is a landing page for a company that offers services for the development of web applications, mobile applications, and software development.
 
@@ -10,9 +10,9 @@ This project was created with the purpose of practicing the use of Tailwind CSS 
 
 <div align="center">
 
-[![demo](https://img.shields.io/badge/View%20Demo-000?style=for-the-badge&logo=Google-Chrome&logoColor=white)](https://brother.jpdiaz.dev/)
+[![demo](https://img.shields.io/badge/View%20Demo-000?style=for-the-badge&logo=Google-Chrome&logoColor=white)](https://lp.jpdiaz.dev/)
 [![Figma](https://img.shields.io/badge/Figma-F24E1E.svg?style=for-the-badge&logo=Figma&logoColor=white)](<https://www.figma.com/file/iJhszXggNzjpQKkF4pm840/IT-WEBSITE-(Community)?type=design&node-id=0-1&mode=design&t=v8dq6vfVKJpCJclk-0>)
-[![repo](https://img.shields.io/badge/View%20Code-000?style=for-the-badge&logo=GitHub&logoColor=white)](https://pr.new/github.com/JuanPabloDiaz/brothers-landingPage)
+[![repo](https://img.shields.io/badge/View%20Code-000?style=for-the-badge&logo=GitHub&logoColor=white)](https://pr.new/github.com/JuanPabloDiaz/landingZone)
 
 </div>
 
@@ -116,12 +116,11 @@ All contributions are welcome. Please read the [CONTRIBUTING guidelines](CONTRIB
 
 ### Contributors
 
-<a href="https://github.com/JuanPabloDiaz/brothers-landingPage/graphs/contributors"><img src="https://contrib.rocks/image?repo=JuanPabloDiaz/brothers-landingPage" /></a><!-- Made with [contrib.rocks](https://contrib.rocks). -->
-
+<a href="https://github.com/JuanPabloDiaz/landingZone/graphs/contributors"><img src="https://contrib.rocks/image?repo=JuanPabloDiaz/landingZone" /></a><!-- Made with [contrib.rocks](https://contrib.rocks). -->
 
 ## License 📜
 
-[Brother Landing Page](https://brother.jpdiaz.dev) is licensed under the MIT License.
+[Landing Zone](https://lp.jpdiaz.dev) is licensed under the MIT License.
 
 I hope you enjoy using the 25 + 5 Clock!
 

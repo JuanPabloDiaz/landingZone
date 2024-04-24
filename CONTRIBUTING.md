@@ -2,17 +2,17 @@
 
 ## Getting Started
 
-1. [Fork](https://github.com/JuanPabloDiaz/brothers-landingPage/fork) the repository on GitHub.
+1. [Fork](https://github.com/JuanPabloDiaz/landingZone/fork) the repository on GitHub.
 2. Clone the forked repository to your local machine.
 
    ```sh
-   git clone https://github.com/<your_github_username>/brothers-landingPage.git
+   git clone https://github.com/<your_github_username>/landingZone.git
    ```
 
 3. Get into the root directory
 
    ```sh
-   cd brothers-landingPage
+   cd landingZone
    ```
 
 4. Install all the dependencies

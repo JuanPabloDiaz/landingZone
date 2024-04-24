@@ -14,7 +14,7 @@ jobs:
         with:
           # You can target a project in a different organization
           # to the issue
-          project-url: https://github.com/JuanPabloDiaz/brothers-landingPage
+          project-url: https://github.com/JuanPabloDiaz/landingZone
           github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
           labeled: bug, needs-triage
           label-operator: OR
