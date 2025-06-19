@@ -1,6 +1,0 @@
-name = "lp"
-compatibility_date = "2025-06-19"
-main = "workers-site/index.js"
-
-[site]
-bucket = "./build"

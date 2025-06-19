@@ -52,8 +52,8 @@ const Footer = () => {
       label: "Contact Us",
       items: [
         {
-          href: "mailto:jpdiaz@gmx.com?subject = From%your%Landing%Page%with%React&body = Hello%Juan",
-          name: "jpdiaz@gmx.com",
+          href: "mailto:contact@jpdiaz.dev?subject = From%your%Landing%Page%with%React&body = Hello%Juan",
+          name: "contact@jpdiaz.dev",
         },
       ],
     },
