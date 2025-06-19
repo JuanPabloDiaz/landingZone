@@ -1,0 +1,6 @@
+name = "mi-landing-page"
+type = "javascript"
+compatibility_date = "2025-06-19"
+
+[site]
+bucket = "./build"
